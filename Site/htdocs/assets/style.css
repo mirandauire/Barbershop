@@ -181,7 +181,7 @@ ul a:hover {
     position: relative;
     z-index: 8;
     overflow: hidden;
-    @media screen and (max-width:1079px) { 
+    @media screen and (max-width:1365px) { 
         height: auto;
     }
 }
@@ -202,7 +202,7 @@ ul a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    @media screen and (max-width:1079px) { 
+    @media screen and (max-width:1365px) { 
         height: auto;
     }
 }
