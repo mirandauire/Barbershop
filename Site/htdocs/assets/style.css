@@ -45,8 +45,8 @@ body {
  #fake-navbar {
     /* para o efeito ensolarado saindo do menu. !Nem todas as imagens lidam bem com o efeito */
     filter: blur(64px);
-    mix-blend-mode: hard-light;
-    background-color: #ff6f00;
+    mix-blend-mode: lighten;
+    background-color: #ff3300;
     height: 6vh;
     width: 100vw;
     position: fixed;
@@ -86,7 +86,7 @@ body {
 
 .instagram_icon .bi-instagram {
     color:#ffffff;
-    font-size: 2vh;;
+    font-size: 2vh;
 }
 
 .instagram_icon .bi-instagram:hover {
@@ -201,7 +201,7 @@ ul a:hover {
 }
 
 #section8 {
-    /* reduzir rodapé */
+    /* Diminuir o rodapé */
 }
 
 .background {
