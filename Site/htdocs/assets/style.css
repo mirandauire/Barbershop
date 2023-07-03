@@ -73,7 +73,7 @@ body {
 .navbar-rtext {
     position: absolute;
     text-align: right;
-    right: 12vw;
+    right: 4vw;
     color: white;
     font-size: 1.5vh;   
 }
@@ -97,6 +97,7 @@ body {
 .navbar ul{
     list-style-type: none;
     margin-bottom: 0;
+    padding-left: 0rem; /* problema com o min-menu por causa de cfg. do bootstrap */
 }
 
 .navbar li{
@@ -118,7 +119,7 @@ ul a:hover {
     filter: drop-shadow(0px 0px 2px #FF6E00);
 }
 
-@media screen and (max-width:1280px) { 
+@media screen and (max-width:1365px) { 
     /* Fazer elementos à direita da navbar sumirem */
 
     .navbar-rtext {
@@ -127,7 +128,7 @@ ul a:hover {
 
 }
 
-@media screen and (max-width:1280px) { 
+@media screen and (max-width:1079px) { 
     /* Fazer o menu sumir */
 
     .instagram_icon {
@@ -156,8 +157,6 @@ ul a:hover {
         text-align: right;
         padding: 1vh 0;
         position: relative;
-        /* top: 8vh; */
-        top: 9vh;
     }
 
     #min-navbar a {
@@ -181,6 +180,10 @@ ul a:hover {
     opacity: 0.9;
     position: relative;
     z-index: 8;
+    overflow: hidden;
+    @media screen and (max-width:1079px) { 
+        height: auto;
+    }
 }
 
 #section1, #section5 {
@@ -194,18 +197,21 @@ ul a:hover {
 
 #section2, #section4, #section6, #section8 {
     display: flex;
+    position: relative;
     height: 50vh;
-    width: 100vw;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    @media screen and (max-width:1079px) { 
+        height: auto;
+    }
 }
 
 #section8 {
-    /* Diminuir o rodapé */
+    height: 20vh;
 }
 
 .background {
-    position: absolute;
     height: 50vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -231,9 +237,12 @@ ul a:hover {
 
 #section8 .background {
     background-image: url(images/4-Hidratacao.jpg);
+    height: 20vh;
 }
 
 #section4 .star-rating {
+    position: absolute;
+    justify-content: center;
     height: 10vh;
     top: 0vh;
 }
@@ -245,9 +254,6 @@ ul a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width:1280px) { 
-        height: 10vh;
-    }
 }
 
 #section0 .carousel {
@@ -264,15 +270,14 @@ ul a:hover {
   }
 
   #section0 .carousel-item {
-    transition: transform 1s linear;
+    transition: transform 3s linear;
   }
 
 #section1 .img_section {
-    position: absolute; 
-    top: 10vh;
-    right: 10vw;
-    width: 25vw;
-    height: 80vh;
+    float: right;
+    margin-right: 15vw;
+    width: 400px;
+    height: 600px;
     background: url(images/img1.jpg);
     background-size: cover;
     background-position: center;
@@ -280,23 +285,23 @@ ul a:hover {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    @media screen and (max-width:1365px) { 
+        float: left;
+        margin-left: 15vw;
+        display: none;
+    }
 }
 
 /* End of "Sections General" */
 
 /* "Sections Text" */
 
+/* título da seção */
 h2 {
     padding-top: 10vh; 
     padding-left: 10vw;
     font-family: 'Righteous', cursive;
-    font-size: 6vh;
-    @media screen and (max-width:1280px) { 
-        font-size: 5vh;
-    }
-    @media screen and (max-width:720px) { 
-        font-size: 4vh;
-    }
+    font-size: 3rem;
 }
 
 #section1, #section5 h2 {
@@ -307,19 +312,21 @@ h2 {
     color: white;
 }
 
+/* texto da seção */
 p {
+    float: left;
     padding-top: 7.5vh;
     padding-left: 15vw;
-    width: 55vw;
-    font-size: 4vh;
-    @media screen and (max-width:1280px) { 
-        font-size: 3vh;
-    }
-    @media screen and (max-width:1080px) { 
-        font-size: 2.2vh;
-    }
-    @media screen and (max-width:720px) { 
-        font-size: 1.8vh;
+    padding-right: 15vw;
+    padding-bottom: 7.5vh;
+    font-size: 1.5rem;
+}
+
+#section1 p {
+    float: left;
+    width: 55vw;    
+    @media screen and (max-width:1365px) { 
+        width: 100vw;
     }
 }
 
@@ -331,6 +338,7 @@ p {
     color: white;
 }
 
+/* texto da divisória */
 text {
     z-index: 9;
     width: 75vw;
@@ -340,34 +348,16 @@ text {
     font-style: italic;
     font-weight: bolder;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 6vh;
-    @media screen and (max-width:1280px) { 
-        font-size: 5vh;
-    }
-    @media screen and (max-width:720px) { 
-        font-size: 4vh;
-    }
+    font-size: 2.5rem;
 }
 
 #section4 text {
-    font-size: 6vh;
-    @media screen and (max-width:1280px) { 
-        font-size: 4.5vh;
-    }
-    @media screen and (max-width:720px) { 
-        font-size: 3vh;
-    }
+    font-size: 2.5rem;
 }
 
 #section8 text {
     font-style: normal;
-    font-size: 4vh;
-    @media screen and (max-width:1280px) { 
-        font-size: 3vh;
-    }
-    @media screen and (max-width:720px) { 
-        font-size: 2vh;
-    }
+    font-size: 1.5rem;
 }
 
-/* End. */
+/* END. */
