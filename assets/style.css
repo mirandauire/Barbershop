@@ -95,10 +95,25 @@ body {
     color: #FF6E00;
     filter: drop-shadow(0px 0px 2px #FF6E00);
 }
-
+ 
+    .menu_usuario{
+     position: fixed;
+        right:2vw;
+     top: 1vh;
+    }
+.conteudo_drop li{
+  position: fixed;
+  
+    width: 130px;
+ display: block;
+    color:white;
+  
+    }
 .navbar ul{
     list-style-type: none;
     margin-bottom: 0;
+    margin: 0 0.5em;
+    padding: 5px;
     padding-left: 0rem; /* problema com o min-menu por causa de cfg. do bootstrap */
 }
 
@@ -367,3 +382,18 @@ text {
 }
 
 /* END. */
+.floating-menu {
+    font-family: sans-serif;
+    background: yellowgreen;
+    padding: 5px;;
+    width: 130px;
+    z-index: 100;
+    position: fixed;
+  }
+  .floating-menu a, 
+  .floating-menu h3 {
+    font-size: 0.9em;
+    display: block;
+    margin: 0 0.5em;
+    color: white;
+  }
