@@ -24,8 +24,8 @@ body {
 .logo{
     background-color: rgb(0, 0, 0);
     position: fixed;
-    height: 12vh;
-    width: 12vh;
+    height: 10vh;
+    width: 10vh;
     left: 10vw;
     border-radius: 100%;
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,1)) ;
@@ -39,7 +39,7 @@ body {
  
  .img_logo {
      position: absolute;
-     top: -3vh;
+     top: -2.5vh;
  }
  
  #fake-navbar {
@@ -62,7 +62,7 @@ body {
     position: fixed;
     background-color: rgb(0, 0, 0);
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,1));
-    height: 6vh;
+    height: 5vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ body {
     text-align: right;
     right: 12vw;
     color: white;
-    font-size: 1.5vh;   
+    font-size: 1.2vh;   
 }
 
 .instagram_icon {
@@ -110,7 +110,7 @@ body {
     text-transform: uppercase;
     color: white;
     font-family: 'Righteous', cursive;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
     cursor: pointer;
 }
 
@@ -131,10 +131,13 @@ ul a:hover {
 @media screen and (max-width:1079px) { 
     /* Fazer o menu sumir */
 
+    ul a:hover {
+        color: #FF6E00;
+        filter: drop-shadow(0px 0px 2px #FF6E00);
+    }
+
     .instagram_icon {
-        z-index: 12;
-        top: 1.5vh;
-        padding-left: 60vw; 
+        top: 1.2vh;
         opacity: 0.67;
         /* top: 90vh; */
     }
@@ -145,28 +148,21 @@ ul a:hover {
 
     #min-navbar {    
         display: flex;
-        padding-left: 60vw; 
-        /* padding-left usado pois não consegui alinhar o menu na lateral */
     }
 
     #min-navbar li {
         /* para sobrepor o .navbar li */
-        display: block;
-        background-color: #000000;
-        opacity: 0.67;  
-        text-align: right;
-        padding: 1vh 0;
+        display: inline;
         position: relative;
     }
 
     #min-navbar a {
-        /* para sobrepor o .navbar a */
-        margin-right: 2vw;
-        margin-left: 10vw;
-    }
-
-    #min-navbar .home {
-        display: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'Righteous', cursive;
+        font-size: 1.2vh;
+        cursor: pointer;
     }
 
 }
@@ -244,7 +240,7 @@ ul a:hover {
     position: absolute;
     justify-content: center;
     height: 10vh;
-    top: 0vh;
+    opacity: 0.34;
 }
 
 #section0 {
@@ -319,7 +315,10 @@ p {
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 17.5vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    @media screen and (max-height:719px) {
+        font-size: 1rem;
+    }
 }
 
 #section1 p {
@@ -348,16 +347,90 @@ text {
     font-style: italic;
     font-weight: bolder;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    @media screen and (max-width:719px) {
+        font-size: 1.8rem;
+    }
 }
 
 #section4 text {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    @media screen and (max-width:719px) {
+        font-size: 1.2rem;
+    }
 }
 
 #section8 text {
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    @media screen and (max-width:719px) {
+        font-size: 1.2rem;
+    }
+}
+
+/* End of "Sections Text" */
+
+/* "Sections */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 7.5vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 15vh;
+    @media screen and (max-width:719px) {
+        grid-template-columns: repeat(1, 4fr);
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 0vh;
+    }
+}
+
+.text-bg-dark {
+    /* card */
+    height: 60vh;
+    width: auto;
+    margin-left: 3vh;
+    @media screen and (max-width:719px) {
+        margin-left: 0vh;
+    }
+}
+
+#card-1 .text-bg-dark {
+    background: url(images/1-Pezinho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 .text-bg-dark {
+    background: url(images/1-Pezinho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 .text-bg-dark {
+    background: url(images/1-Pezinho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 .text-bg-dark {
+    background: url(images/1-Pezinho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title {
+    position: relative;
+    float: right;
+    font-family: 'Righteous', cursive;
+    font-style: italic;
+    font-size: 2.4rem;
 }
 
 /* END. */

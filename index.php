@@ -27,11 +27,11 @@
         <a class="instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
         <div id="min-navbar">
             <ul>
-                <li><a class = home href="#section0">home</a></li>
-                <li><a href="#section1">sobre nós</a></li>
-                <li><a href="#section3">serviços</a></li>
-                <li><a href="#section5">contato</a></li>
-                <li><a href="#section7">agendamento</a></li>
+                <li><a href="#section0">home</a></li>
+                <li><a href="#section1">nós</a></li>
+                <li><a href="#section3">serv.</a></li>
+                <li><a href="#section5">cont.</a></li>
+                <li><a href="#section7">agend.</a></li>
             </ul>
         </div>
     </div>
@@ -64,15 +64,41 @@
         </div>
         <div id="section3">
             <h2>Serviços</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
-                Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
-            </p>
+            <div class="cards">
+                <div id="card-1">
+                    <div class="card text-bg-dark"> 
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card 1</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-2">
+                    <div class="card text-bg-dark"> 
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card 2</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-3">
+                    <div class="card text-bg-dark"> 
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card 3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-4">
+                    <div class="card text-bg-dark"> 
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card 4</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="section4">
             <div class="background"></div>
             <img class="star-rating" src="assets/images/icons/star-rating.svg"></img>
-            <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”
-            </text>            
+            <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”</text>
         </div>
         <div id="section5">
             <h2>Contato</h2>
