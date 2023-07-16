@@ -1,6 +1,7 @@
 /* "head of css" */
 
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
     margin: 0;
@@ -12,7 +13,7 @@
 
 body {
     background-color: #D99B6C;
-    font-family: 'Akshar', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 10px;
 }
 
@@ -23,11 +24,10 @@ body {
 .logo{
     background-color: rgb(0, 0, 0);
     position: fixed;
-    margin-bottom: 25em;
-    height: 23vh;
-    width: 20vh;
+    height: 12vh;
+    width: 12vh;
     left: 10vw;
-    /* border-radius: 100%; */
+    border-radius: 100%;
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,1)) ;
     z-index: 11;
  }
@@ -65,17 +65,15 @@ body {
     height: 6vh;
     width: 100vw;
     display: flex;
-    padding-left: 20vw;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     z-index: 10;
 }
 
 .navbar-rtext {
     position: absolute;
-    padding-right: 17em;
     text-align: right;
-    right: 4vw;
+    right: 12vw;
     color: white;
     font-size: 1.5vh;   
 }
@@ -111,8 +109,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    /* font-family: 'Righteous', cursive; */
-    font-size: 1.8vh;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5vh;
     cursor: pointer;
 }
 
@@ -126,7 +124,6 @@ ul a:hover {
 
     .navbar-rtext {
         display: none;
-        
     }
 
 }
@@ -279,15 +276,15 @@ ul a:hover {
 #section1 .img_section {
     float: right;
     margin-right: 15vw;
-    width: 200px;
-    height: 300px;
+    width: 400px;
+    height: 600px;
     background: url(images/img1.jpg);
     background-size: cover;
     background-position: center;
-    /* border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+    border-bottom-right-radius: 10px;
     @media screen and (max-width:1365px) { 
         float: left;
         margin-left: 15vw;
@@ -301,10 +298,10 @@ ul a:hover {
 
 /* título da seção */
 h2 {
-    padding-top: 11.5vh; 
-    padding-left: 21vw;
-    /* font-family: 'Righteous', cursive; */
-    font-size: 2rem;
+    padding-top: 10vh; 
+    padding-left: 10vw;
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
 }
 
 #section1, #section5 h2 {
@@ -319,16 +316,15 @@ h2 {
 p {
     float: left;
     padding-top: 7.5vh;
-    padding-left: 21vw;
-    padding-right: 17em;
+    padding-left: 15vw;
+    padding-right: 15vw;
     padding-bottom: 17.5vh;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #section1 p {
     float: left;
-    padding-right: 30em;
-    /* width: 55vw;     */
+    width: 55vw;    
     @media screen and (max-width:1365px) { 
         width: 100vw;
     }
@@ -348,22 +344,20 @@ text {
     width: 75vw;
     text-align: center;
     position: absolute;
-    padding-left: 3.5em;
-    padding-right: 2em;
     color: rgb(255, 255, 255);
     font-style: italic;
     font-weight: bolder;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #section4 text {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #section8 text {
     font-style: normal;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 
 /* END. */
