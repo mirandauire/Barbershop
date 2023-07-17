@@ -98,9 +98,16 @@
         </div>
         <div id="section5">
             <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
-                Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
-            </p>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
+                    Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
+                </p>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=640&amp;height=360&amp;hl=en&amp;q=Don Felix Barbershop - Rua César Zama - Barra, Salvador - BA&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="section6">
             <div class="background"></div>

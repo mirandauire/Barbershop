@@ -17,7 +17,7 @@ body {
     font-size: 10px;
 }
 
-/* End of "head" */
+/* END of "head" */
 
 /* "Navbar configuration" */
 
@@ -167,7 +167,7 @@ ul a:hover {
 
 }
 
-/* End of "Navbar" */
+/* END of "Navbar" */
 
 /* "Sections General" */
 
@@ -288,7 +288,7 @@ ul a:hover {
     }
 }
 
-/* End of "Sections General" */
+/* END of "Sections General" */
 
 /* "Sections Text" */
 
@@ -368,9 +368,9 @@ text {
     }
 }
 
-/* End of "Sections Text" */
+/* END of "Sections Text" */
 
-/* "Sections */
+/* "Section Serviços" */
 
 .cards {
     display: grid;
@@ -437,4 +437,36 @@ text {
     font-size: 2.4rem;
 }
 
-/* END. */
+/* END of "Sections Serviços" */
+
+/* "Section Contatos" */
+
+#section5 .content {
+    display: grid;
+    margin-right: 15vh
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width:1080px) {
+        grid-template-columns: repeat(1, 2fr);
+    }
+}
+
+/* Google maps */
+
+    .mapouter {
+        position:relative;
+        text-align:right;
+    }
+
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+    }
+
+    .gmap_iframe {
+        height:360px;
+        width:100%;
+    }
+
+/* END of "Sections Contato" */
+
+/* END OF ALL */
