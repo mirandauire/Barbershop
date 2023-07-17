@@ -27,11 +27,11 @@
         <a class="instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
         <div id="min-navbar">
             <ul>
-                <li><a href="#section0">home</a></li>
-                <li><a href="#section1">nós</a></li>
-                <li><a href="#section3">serv.</a></li>
-                <li><a href="#section5">cont.</a></li>
-                <li><a href="#section7">agend.</a></li>
+                <li><a href="#section0"><i class="bi bi-house-door-fill"></i></a></li>
+                <li><a href="#section1"><i class="bi bi-file-earmark-person-fill"></a></i></li>
+                <li><a href="#section3"><i class="bi bi-scissors"></i></a></li>
+                <li><a href="#section5"><i class="bi bi-telephone-fill"></i></a></li>
+                <li><a href="#section7"><i class="bi bi-clock-fill"></i></a></li>
             </ul>
         </div>
     </div>
