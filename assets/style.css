@@ -122,7 +122,7 @@ ul a:hover {
     filter: drop-shadow(0px 0px 2px #FF6E00);
 }
 
-@media screen and (max-width:1080px) { 
+@media screen and (max-width:1366px) { 
     /* Fazer elementos à direita da navbar sumirem */
 
     .navbar-rtext {
@@ -157,7 +157,7 @@ ul a:hover {
         /* para sobrepor o .navbar li */
         display: inline;
         position: relative;
-        font-size: 1.2vh;
+        top: 0.15vh;
     }
 
     #min-navbar a {
@@ -312,8 +312,7 @@ p {
 }
 
 #section1 p {
-    float: left;
-    width: 55vw;    
+    float: left;   
     @media screen and (max-width:1080px) { 
         width: 100vw;
     }
@@ -362,10 +361,10 @@ text {
 
 /* "Section Sobre Nós" */
 
-/* #section1 {
+#section1 {
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
-} */
+    grid-template-columns: repeat(2, 1fr);
+}
 
 #section1 .img_section {
     float: right;
@@ -415,8 +414,16 @@ text {
     }
 }
 
-.card-img-overlay:hover {
-    filter: grayscale() blur(2px);
+.card.text-bg-dark:hover .card-img-overlay {
+    filter: grayscale() blur(3px) brightness(50%) contrast(150%);
+    transform: scale(1.034);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-img-overlay {
+    /* hover off */
+    transition: 0.5s;
 }
 
 #card-1 .card-img-overlay {
@@ -449,11 +456,14 @@ text {
 
 .card-title {
     position: relative;
-    float: right;
+    top: 45%;
+    text-align: center;
     font-family: 'Righteous', cursive;
     font-style: italic;
     font-size: 2.4rem;
+    cursor: pointer;
 }
+
 
 /* END of "Sections Serviços" */
 
