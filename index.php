@@ -53,10 +53,11 @@
         </div>
         <div id="section1">
             <h2>Sobre nós</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
-                Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
-            </p>
-            <div class="img_section"></div>
+            <div class="content">
+                <p>A Don Felix é a barbearia da sua época. Focada em excelência, ela conta com tudo que o homem moderno precisa. Um ambiente confortável, descontraído e exclusivamente masculino, com cuidados para todos os estilos de barba e cabelo, além de serviços como o "Dia do Noivo". Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada ou assistir aos seus esportes favoritos.</p>
+                <!-- <span>Seja um de nossos clientes exclusivos!</span> -->
+                <div class="img_section"></div>
+            </div>
         </div>
         <div id="section2">
             <div class="background"></div>

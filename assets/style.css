@@ -30,6 +30,9 @@ body {
     border-radius: 100%;
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,1)) ;
     z-index: 11;
+    @media screen and (max-width:1080px) { 
+        left: 0vw;
+    }
  }
  
  .logo:hover {
@@ -269,25 +272,6 @@ ul a:hover {
     transition: transform 3s linear;
   }
 
-#section1 .img_section {
-    float: right;
-    margin-right: 15vw;
-    width: 400px;
-    height: 600px;
-    background: url(images/img1.jpg);
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    @media screen and (max-width:1080px) { 
-        float: left;
-        margin-left: 15vw;
-        display: none;
-    }
-}
-
 /* END of "Sections General" */
 
 /* "Sections Text" */
@@ -370,6 +354,34 @@ text {
 
 /* END of "Sections Text" */
 
+/* "Section Sobre Nós" */
+
+/* #section1 {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+} */
+
+#section1 .img_section {
+    float: right;
+    margin-right: 15vw;
+    width: 400px;
+    height: 600px;
+    background: url(images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @media screen and (max-width:1080px) { 
+        float: left;
+        margin-left: 15vw;
+        display: none;
+    }
+}
+
+/* END of "Section Sobre Nós" */
+
 /* "Section Serviços" */
 
 .cards {
@@ -443,10 +455,11 @@ text {
 
 #section5 .content {
     display: grid;
-    margin-right: 15vh
+    margin-right: 15vh;
     grid-template-columns: repeat(2, 1fr);
     @media screen and (max-width:1080px) {
         grid-template-columns: repeat(1, 2fr);
+        margin-right: 0vh;
     }
 }
 
