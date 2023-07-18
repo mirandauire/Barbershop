@@ -224,6 +224,13 @@ ul a:hover {
     }
 }
 
+#section2, #section6 {
+    /* Esconder as seções de transição no mobile */
+    @media screen and (max-width:1080px) { 
+        display: none;
+    }
+}
+
 #section4 {
     @media screen and (max-width:1080px) { 
         height: auto;
@@ -437,6 +444,11 @@ text {
     filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
+#section0 .login-content img:hover {
+    filter: drop-shadow(0px 0px 4px #ffffff) blur(1px) brightness(200%);
+    transition: 0.2s
+}
+
 #section0 .login-content text{
     display: flex;
     justify-content: center;
@@ -581,7 +593,7 @@ text {
     font-weight: bolder;
 }
 
-/* END of "Section Home" */
+/* END of "Home" */
 
 
 /* "Section Sobre Nós" */
@@ -632,7 +644,7 @@ text {
     }
 }
 
-/* END of "Section Sobre Nós" */
+/* END of "Sobre Nós" */
 
 
 /* "Section Serviços" */
@@ -647,8 +659,8 @@ text {
     @media screen and (max-width:1080px) { 
         grid-template-columns: repeat(1, 2fr);
         width: 1080px;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
         margin-bottom: 0vh;
     }
 }
@@ -725,18 +737,37 @@ text {
     cursor: pointer;
 }
 
-/* END of "Sections Serviços" */
+/* END of "Serviços" */
 
 
-/* "Section Contatos" */
+/* "Section Contato" */
 
 #section5 .content {
     display: grid;
-    margin-right: 15vh;
     grid-template-columns: repeat(2, 1fr);
-    @media screen and (max-width:1080px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    margin-bottom: 15vh;
+    @media screen and (max-width:1080px) { 
         grid-template-columns: repeat(1, 2fr);
-        margin-right: 0vh;
+        width: 1080px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 10vh;
+    }
+}
+
+#section5 p {
+    float: left;
+    width: 648px;
+    padding-right: 10vh;
+    @media screen and (max-width:1080px) {
+        float: center;
+        width: 100%;
+        padding-top: 3.75vh;
+        padding-right: 0vw;
+        padding-bottom: 7.5vh;
     }
 }
 
@@ -757,7 +788,41 @@ text {
         width:100%;
     }
 
-/* END of "Sections Contato" */
+/* END of "Contato" */
+
+
+/* "Section Agendamento" */
+
+#section7 .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    margin-bottom: 15vh;
+    @media screen and (max-width:1080px) { 
+        grid-template-columns: repeat(1, 2fr);
+        width: 1080px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 10vh;
+    }
+}
+
+#section7 p {
+    float: left;
+    width: 648px;
+    padding-right: 10vh;
+    @media screen and (max-width:1080px) {
+        float: center;
+        width: 100%;
+        padding-top: 3.75vh;
+        padding-right: 0vw;
+        padding-bottom: 7.5vh;
+    }
+}
+
+/* END of "Agendamento" */
 
 
 /* END OF ALL */
