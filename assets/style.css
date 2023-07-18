@@ -300,10 +300,16 @@ ul a:hover {
 
 /* título da seção */
 h2 {
+    float: right;
     padding-top: 10vh; 
-    padding-left: 10vw;
+    padding-right: 67vw;
     font-family: 'Righteous', cursive;
     font-size: 3rem;
+    @media screen and (max-width:1080px) {
+        float: left;
+        padding-right: 0vw;
+        padding-left: 5vw;
+    }
 }
 
 #section1, #section5 h2 {
@@ -370,17 +376,22 @@ text {
 #section1 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
     margin-bottom: 15vh;
     @media screen and (max-width:1080px) { 
         grid-template-columns: repeat(1, 2fr);
+        width: 1080px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 10vh;
     }
 }
 
 #section1 p {
     float: left;
-    width: 50vw;
+    width: 648px;
     padding-right: 10vh;
     @media screen and (max-width:1080px) {
         float: center;
