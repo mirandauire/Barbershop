@@ -95,6 +95,7 @@ body {
 .instagram_icon .bi-instagram:hover {
     color: #FF6E00;
     filter: drop-shadow(0px 0px 2px #FF6E00);
+    transition: 0.34s;
 }
 
 .navbar ul{
@@ -120,6 +121,7 @@ body {
 ul a:hover {
     color: #FF6E00;
     filter: drop-shadow(0px 0px 2px #FF6E00);
+    transition: 0.34s;
 }
 
 @media screen and (max-width:1080px) { 
@@ -134,15 +136,15 @@ ul a:hover {
 @media screen and (max-width:1080px) { 
     /* Fazer o menu sumir */
 
-    ul a:hover {
+    #min-navbar a:hover {
         color: #FF6E00;
         filter: drop-shadow(0px 0px 2px #FF6E00);
+        transition: 0.34s;
     }
 
     .instagram_icon {
         top: 1.2vh;
         opacity: 0.67;
-        /* top: 90vh; */
     }
 
     .navbar li{
@@ -268,33 +270,8 @@ ul a:hover {
     opacity: 0.34;
 }
 
-#section0 {
-    height: 100vh;
-    width: 100vw;
-    background-color: #fdc59b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#section0 .carousel {
-    height: 100vh;
-    width: 100vw;
-    mix-blend-mode: hard-light;
-    filter: brightness(90%);
-  }
-
-  #section0 .carousel img {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover !important;
-  }
-
-  #section0 .carousel-item {
-    transition: transform 3s linear;
-  }
-
 /* END of "Sections General" */
+
 
 /* "Sections Text" */
 
@@ -371,6 +348,238 @@ text {
 
 /* END of "Sections Text" */
 
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* "Section Home" */
+
+#section0 {
+    background-color: #fdc59b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section0 .carousel {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: hard-light;
+    filter: brightness(90%);
+}
+
+#section0 .carousel img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover !important;
+}
+
+#section0 .carousel-item {
+    transition: transform 3s linear;
+}
+
+#section0 .content {
+    z-index: 1;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    opacity: 100;
+    width: 1080px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width:1080px) { 
+        grid-template-columns: repeat(1, 2fr);
+        display: block;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+#section0 .login-container{
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    opacity: 0.9;
+    background-color: #000000;
+    filter: drop-shadow(0px 0px 4px #000000);
+    align-content: center;
+    padding: 2rem 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @media screen and (max-width:1080px) {
+        height: 100vh;
+        width: 100vw;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+#section0 .login-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+#section0 form{
+	width: 360px;
+}
+
+#section0 .login-content img{
+    height: 100px;
+    filter: drop-shadow(0px 0px 4px #ffffff);
+}
+
+#section0 .login-content text{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-style: normal;
+    padding: 2vh 2vh 4vh 2vh;
+	color: #ffffff;
+	font-size:  1.5rem;
+    @media screen and (max-width:1080px) {
+        margin: auto;
+    }
+}
+
+#section0 .login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+#section0 .login-content .input-div.one{
+	margin-top: 0;
+}
+
+#section0 .i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#section0 .i i{
+	transition: 0.3s;
+}
+
+/* login input */
+
+#section0 .input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+#section0 .input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+#section0 .input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #FF6E00;
+	transition: .4s;
+}
+
+#section0 .input-div:before{
+	right: 50%;
+}
+
+#section0 .input-div:after{
+	left: 50%;
+}
+
+#section0 .input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+#section0 .input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+#section0 .input-div.focus > .i > i{
+	color: #FF6E00;
+}
+
+#section0 .input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+#section0 .input-div.pass{
+	margin-bottom: 4px;
+}
+
+#section0 a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+    padding: 2vh;
+	color: #FF6E00;
+	font-size: 0.9rem;
+	transition: 0.34s;
+}
+
+#section0 a:hover{
+	color: #ff3300;
+}
+
+#section0 .btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #FF6E00, #ff3300, #ff3300);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: 0.34s;
+}
+
+#section0 .btn:hover{
+	background-position: right;
+}
+
+/* END of "Section Home" */
+
+
 /* "Section Sobre Nós" */
 
 #section1 .content {
@@ -419,8 +628,8 @@ text {
     }
 }
 
-
 /* END of "Section Sobre Nós" */
+
 
 /* "Section Serviços" */
 
@@ -499,8 +708,8 @@ text {
     cursor: pointer;
 }
 
-
 /* END of "Sections Serviços" */
+
 
 /* "Section Contatos" */
 
@@ -532,5 +741,6 @@ text {
     }
 
 /* END of "Sections Contato" */
+
 
 /* END OF ALL */

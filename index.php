@@ -36,6 +36,7 @@
         </div>
     </div>
     <div class="sections">
+
         <div id="section0">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -48,9 +49,41 @@
                   <div class="carousel-item">
                     <img src="assets/images/alternative/5.jpg" class="d-block w-100" alt="images/alternative/1.jpg">
                   </div>
-                </div>             
-              </div>
+                </div>         
+            </div>
+            <div class="content">
+                <div class="login-container">
+                    <div class="login-content">
+                        <form action="index.html">
+                            <img src="assets/images/logo-title-b.svg">
+                            <text class="title">Seja bem-vindo!</text>
+                            <div class="input-div one">
+                            <div class="i">
+                                    <i class="bi bi-person-fill"></i>
+                            </div>
+                            <div class="div">
+                                    <h5>Usuário</h5>
+                                    <input type="text" class="input">
+                            </div>
+                            </div>
+                            <div class="input-div pass">
+                            <div class="i"> 
+                                    <i class="bi bi-key-fill"></i>
+                            </div>
+                            <div class="div">
+                                    <h5>Senha</h5>
+                                    <input type="password" class="input">
+                            </div>
+                            </div>
+                            <a href="#">Esqueceu a senha?</a>
+                            <input type="submit" class="btn" value="Login">
+                        </form>
+                    </div>
+                </div>
+                <script type="text/javascript" src="assets/js/main.js"></script>                
+            </div>
         </div>
+
         <div id="section1">
             <h2>Sobre nós<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
             <div class="content">
@@ -59,10 +92,12 @@
                 <div class="img_section"></div>
             </div>
         </div>
+
         <div id="section2">
             <div class="background"></div>
             <text>“Don Félix inaugura Barbearia Premium na Barra”</text>
         </div>
+
         <div id="section3">
             <h2>Serviços<span class="ic-title"><img src="assets/images/logo-title-w.svg"></img></span></h2>
             <div class="cards">
@@ -92,6 +127,7 @@
                 </div>
             </div>
         </div>
+
         <div id="section4">
             <div class="background"></div>
             <img class="star-rating" src="assets/images/icons/star-rating.svg"></img>
@@ -110,20 +146,24 @@
                 </div>
             </div>
         </div>
+
         <div id="section6">
             <div class="background"></div>
             <text>"Barba, cabelo e conforto!"</text>            
         </div>
+
         <div id="section7">
             <h2>Agendamento<span class="ic-title"><img src="assets/images/logo-title-w.svg"></img></span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
                 Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
             </p>
         </div>
+
         <div id="section8">
             <div class="background"></div>
             <text>&copy; 2023 Copyright &reg; Todos direitos reservados</text>
         </div>
+
     </div>
 </body>
 </html>
