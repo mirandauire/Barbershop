@@ -28,7 +28,7 @@
         <div id="min-navbar">
             <ul>
                 <li><a href="#section0"><i class="bi bi-house-door-fill"></i></a></li>
-                <li><a href="#section1"><i class="bi bi-file-earmark-person-fill"></a></i></li>
+                <li><a href="#section1"><i class="bi bi-bookmarks-fill"></a></i></li>
                 <li><a href="#section3"><i class="bi bi-scissors"></i></a></li>
                 <li><a href="#section5"><i class="bi bi-telephone-fill"></i></a></li>
                 <li><a href="#section7"><i class="bi bi-clock-fill"></i></a></li>
@@ -52,9 +52,9 @@
               </div>
         </div>
         <div id="section1">
-            <h2>Sobre nós</h2>
+            <h2>Sobre nós<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
             <div class="content">
-                <p>A Don Felix é a barbearia da sua época. Focada em excelência, ela conta com tudo que o homem moderno precisa. Um ambiente confortável, descontraído e exclusivamente masculino, com cuidados para todos os estilos de barba e cabelo, além de serviços como o "Dia do Noivo". Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada ou assistir aos seus esportes favoritos.</p>
+                <p>A Don Felix é a barbearia da sua época. Focada em excelência, ela conta com tudo que o homem moderno precisa. Um ambiente confortável, descontraído e exclusivamente masculino, com cuidados para todos os estilos de barba e cabelo, além de serviços como o "Dia do Noivo". Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada ou assistir aos seus esportes favoritos. Aqui cada detalhe é minuciosamente trabalhado, desde o corte perfeito até a barba impecável. Na Don Félix, a amizade se une à expertise, proporcionando uma experiência inigualável. Descubra o poder de uma verdadeira conexão entre barbeiro e cliente. Venha para a nossa barbearia e sinta a diferença.</p>
                 <!-- <span>Seja um de nossos clientes exclusivos!</span> -->
                 <div class="img_section"></div>
             </div>
@@ -64,7 +64,7 @@
             <text>“Don Félix inaugura Barbearia Premium na Barra”</text>
         </div>
         <div id="section3">
-            <h2>Serviços</h2>
+            <h2>Serviços<span class="ic-title"><img src="assets/images/logo-title-w.svg"></img></span></h2>
             <div class="cards">
                 <div id="card-1">
                     <div class="card text-bg-dark"> 
@@ -90,7 +90,6 @@
                         <h5 class="card-title">Card 4</h5>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div id="section4">
@@ -99,7 +98,7 @@
             <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”</text>
         </div>
         <div id="section5">
-            <h2>Contato</h2>
+            <h2>Contato<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
                     Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
@@ -116,7 +115,7 @@
             <text>"Barba, cabelo e conforto!"</text>            
         </div>
         <div id="section7">
-            <h2>Agendamento</h2>
+            <h2>Agendamento<span class="ic-title"><img src="assets/images/logo-title-w.svg"></img></span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
                 Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
             </p>

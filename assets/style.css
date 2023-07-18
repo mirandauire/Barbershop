@@ -122,7 +122,7 @@ ul a:hover {
     filter: drop-shadow(0px 0px 2px #FF6E00);
 }
 
-@media screen and (max-width:1366px) { 
+@media screen and (max-width:1080px) { 
     /* Fazer elementos à direita da navbar sumirem */
 
     .navbar-rtext {
@@ -180,8 +180,18 @@ ul a:hover {
 
 /* "Sections General" */
 
+.ic-title img {
+    padding-left: 2vh;
+    height: 100px;
+    width: 100px;
+}
+
+#section7 .ic-title img {
+    display: none;
+}
+
 #section1, #section3, #section5, #section7 {
-    height: 100vh;
+    height: auto;
     opacity: 0.9;
     position: relative;
     z-index: 8;
@@ -203,10 +213,16 @@ ul a:hover {
 #section2, #section4, #section6, #section8 {
     display: flex;
     position: relative;
-    height: 50vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    @media screen and (max-width:1080px) { 
+        height: 25vh;
+    }
+}
+
+#section4 {
     @media screen and (max-width:1080px) { 
         height: auto;
     }
@@ -302,19 +318,9 @@ h2 {
 p {
     float: left;
     padding-top: 7.5vh;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    padding-bottom: 17.5vh;
     font-size: 1.2rem;
-    @media screen and (max-height:1080px) {
+    @media screen and (max-width:1080px) {
         font-size: 1rem;
-    }
-}
-
-#section1 p {
-    float: left;   
-    @media screen and (max-width:1080px) { 
-        width: 100vw;
     }
 }
 
@@ -361,16 +367,34 @@ text {
 
 /* "Section Sobre Nós" */
 
-#section1 {
+#section1 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 15vh;
+    @media screen and (max-width:1080px) { 
+        grid-template-columns: repeat(1, 2fr);
+    }
+}
+
+#section1 p {
+    float: left;
+    width: 50vw;
+    padding-right: 10vh;
+    @media screen and (max-width:1080px) {
+        float: center;
+        width: 100%;
+        padding-top: 3.75vh;
+        padding-right: 0vw;
+        padding-bottom: 7.5vh;
+    }
 }
 
 #section1 .img_section {
-    float: right;
-    margin-right: 15vw;
-    width: 400px;
-    height: 600px;
+    position: relative;
+    width: auto;
+    margin-top: 7.5vh;
     background: url(images/img1.jpg);
     background-size: cover;
     background-position: center;
@@ -378,12 +402,12 @@ text {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    @media screen and (max-width:1080px) { 
-        float: left;
-        margin-left: 15vw;
-        display: none;
+    @media screen and (max-width:1080px) {
+        margin-top: 0vh;
+        aspect-ratio: 1/1;
     }
 }
+
 
 /* END of "Section Sobre Nós" */
 
@@ -400,7 +424,7 @@ text {
         grid-template-columns: repeat(1, 4fr);
         margin-left: 1vw;
         margin-right: 1vw;
-        margin-bottom: 0vh;
+        margin-bottom: 1vw;
     }
 }
 
