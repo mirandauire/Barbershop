@@ -487,7 +487,7 @@ text {
 	top: 50%;
 	transform: translateY(-50%);
 	color: #999;
-	font-size: 18px;
+	font-size: 1.2rem;
 	transition: .3s;
 }
 
@@ -497,7 +497,7 @@ text {
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #FF6E00;
+	background-color: #b85205;
 	transition: .4s;
 }
 
@@ -516,6 +516,8 @@ text {
 #section0 .input-div.focus > div > h5{
 	top: -5px;
 	font-size: 15px;
+    color: #FF6E00;
+    font-weight: bold;
 }
 
 #section0 .input-div.focus > .i > i{
@@ -533,7 +535,7 @@ text {
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #555;
+	color: #ffffff;
 	font-family: 'poppins', sans-serif;
 }
 
@@ -553,6 +555,7 @@ text {
 
 #section0 a:hover{
 	color: #ff3300;
+    filter: drop-shadow(0px 0px 2px #FF6E00);
 }
 
 #section0 .btn{
@@ -566,7 +569,6 @@ text {
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin: 1rem 0;
 	cursor: pointer;
@@ -575,6 +577,8 @@ text {
 
 #section0 .btn:hover{
 	background-position: right;
+    filter: drop-shadow(0px 0px 4px #FF6E00);
+    font-weight: bolder;
 }
 
 /* END of "Section Home" */
@@ -633,28 +637,41 @@ text {
 
 /* "Section Serviços" */
 
+#section3 .content {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    margin-bottom: 15vh;
+    @media screen and (max-width:1080px) { 
+        grid-template-columns: repeat(1, 2fr);
+        width: 1080px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-bottom: 0vh;
+    }
+}
+
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
     margin-top: 7.5vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom: 15vh;
+    grid-template-columns: repeat(4, 1fr);
     @media screen and (max-width:1080px) {
         grid-template-columns: repeat(1, 4fr);
-        margin-left: 1vw;
-        margin-right: 1vw;
-        margin-bottom: 1vw;
     }
 }
 
 .text-bg-dark {
     /* card */
-    height: 60vh;
+    height: 50vh;
     width: auto;
-    margin-left: 3vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
     @media screen and (max-width:1080px) {
         margin-left: 0vh;
+        margin-right: 0vh;
     }
 }
 

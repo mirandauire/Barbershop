@@ -100,29 +100,31 @@
 
         <div id="section3">
             <h2>Serviços<span class="ic-title"><img src="assets/images/logo-title-w.svg"></img></span></h2>
-            <div class="cards">
-                <div id="card-1">
-                    <div class="card text-bg-dark"> 
-                        <div class="card-img-overlay"></div>
-                        <h5 class="card-title">Card 1</h5>
+            <div class="content">
+                <div class="cards">
+                    <div id="card-1">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Card 1</h5>
+                        </div>
                     </div>
-                </div>
-                <div id="card-2">
-                    <div class="card text-bg-dark"> 
-                        <div class="card-img-overlay"></div>
-                        <h5 class="card-title">Card 2</h5>
+                    <div id="card-2">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Card 2</h5>
+                        </div>
                     </div>
-                </div>
-                <div id="card-3">
-                    <div class="card text-bg-dark"> 
-                        <div class="card-img-overlay"></div>
-                        <h5 class="card-title">Card 3</h5>
+                    <div id="card-3">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Card 3</h5>
+                        </div>
                     </div>
-                </div>
-                <div id="card-4">
-                    <div class="card text-bg-dark"> 
-                        <div class="card-img-overlay"></div>
-                        <h5 class="card-title">Card 4</h5>
+                    <div id="card-4">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Card 4</h5>
+                        </div>
                     </div>
                 </div>
             </div>
