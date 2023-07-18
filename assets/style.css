@@ -444,8 +444,8 @@ text {
     filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
-#section0 .login-content img:hover {
-    filter: drop-shadow(0px 0px 4px #ffffff) blur(1px) brightness(200%);
+#section0 .login-content:hover img {
+    filter: drop-shadow(0px 0px 4px #ffffff) blur(1px) brightness(200%) contrast(200%);
     transition: 0.2s
 }
 
@@ -548,7 +548,7 @@ text {
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
 	color: #ffffff;
-	font-family: 'poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #section0 .input-div.pass{
@@ -679,8 +679,7 @@ text {
     /* card */
     height: 50vh;
     width: auto;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin: 1vh;
     @media screen and (max-width:1080px) {
         margin-left: 0vh;
         margin-right: 0vh;
@@ -699,42 +698,108 @@ text {
     transition: 0.5s;
 }
 
-#card-1 .card-img-overlay {
-    background: url(images/2-Bigode.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#card-2 .card-img-overlay {
-    background: url(images/1-Pezinho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#card-3 .card-img-overlay {
-    background: url(images/1-Pezinho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#card-4 .card-img-overlay {
-    background: url(images/1-Pezinho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .card-title {
     position: relative;
     top: 45%;
     text-align: center;
     font-family: 'Righteous', cursive;
     font-style: italic;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 8px #000000) contrast(200%);
+}
+
+.card.text-bg-dark:hover .card-title {
+    font-size: 2.4rem;
+    top: 40%;
+    filter: drop-shadow(0px 0px 8px #ffffff);
+    transition: 0.5s;
+}
+
+.card-title {
+    /* hover off */
+    transition: 0.5s;
+}
+
+.card-price {
+    position: relative;
+    display: none;
+    top: 40%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FF6E00;
+}
+
+.card.text-bg-dark:hover .card-price {
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 8px #000000) contrast(200%);
+    transition: 0.5s;
+}
+
+.card-price {
+    /* hover off */
+    transition: 0.5s;
+}
+
+#card-1 .card-img-overlay {
+    background: url(images/services/Cabelo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 .card-img-overlay {
+    background: url(images/services/Barba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 .card-img-overlay {
+    background: url(images/services/Bigode.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 .card-img-overlay {
+    background: url(images/services/Pezinho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-5 .card-img-overlay {
+    background: url(images/services/Hidratação.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-6 .card-img-overlay {
+    background: url(images/services/Pintura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-7 .card-img-overlay {
+    background: url(images/services/Matização.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-8 .card-img-overlay {
+    background: url(images/services/Selagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* END of "Serviços" */

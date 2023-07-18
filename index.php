@@ -105,25 +105,57 @@
                     <div id="card-1">
                         <div class="card text-bg-dark"> 
                             <div class="card-img-overlay"></div>
-                            <h5 class="card-title">Card 1</h5>
+                            <h5 class="card-title">Cabelo</h5>
+                            <h4 class="card-price">R$10</h4>
                         </div>
                     </div>
                     <div id="card-2">
                         <div class="card text-bg-dark"> 
                             <div class="card-img-overlay"></div>
-                            <h5 class="card-title">Card 2</h5>
+                            <h5 class="card-title">Barba</h5>
+                            <h4 class="card-price">R$10</h4>
                         </div>
                     </div>
                     <div id="card-3">
                         <div class="card text-bg-dark"> 
                             <div class="card-img-overlay"></div>
-                            <h5 class="card-title">Card 3</h5>
+                            <h5 class="card-title">Bigode</h5>
+                            <h4 class="card-price">R$10</h4>
                         </div>
                     </div>
                     <div id="card-4">
                         <div class="card text-bg-dark"> 
                             <div class="card-img-overlay"></div>
-                            <h5 class="card-title">Card 4</h5>
+                            <h5 class="card-title">Pezinho</h5>
+                            <h4 class="card-price">R$10</h4>
+                        </div>
+                    </div>
+                    <div id="card-5">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Hidratação</h5>
+                            <h4 class="card-price">R$10</h4>
+                        </div>
+                    </div>
+                    <div id="card-6">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Pigmentação</h5>
+                            <h4 class="card-price">R$10</h4>
+                        </div>
+                    </div>
+                    <div id="card-7">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Matização</h5>
+                            <h4 class="card-price">R$10</h4>
+                        </div>
+                    </div>
+                    <div id="card-8">
+                        <div class="card text-bg-dark"> 
+                            <div class="card-img-overlay"></div>
+                            <h5 class="card-title">Selagem</h5>
+                            <h4 class="card-price">R$10</h4>
                         </div>
                     </div>
                 </div>
