@@ -555,6 +555,28 @@ text {
 	margin-bottom: 4px;
 }
 
+#section0 .toggle {
+    float: right;
+    top: 25%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/login/show.svg");
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+#section0 .toggle.showing {
+    background-image: url("images/login/hide.svg");
+}
+
+#section0 button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
 #section0 a{
 	display: block;
 	text-align: right;

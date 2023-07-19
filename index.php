@@ -58,22 +58,23 @@
                             <img src="assets/images/logo-title-b.svg">
                             <text class="title">Seja bem-vindo!</text>
                             <div class="input-div one">
-                            <div class="i">
+                                <div class="i">
                                     <i class="bi bi-person-fill"></i>
-                            </div>
-                            <div class="div">
+                                </div>
+                                <div class="user">
                                     <h5>Usuário</h5>
                                     <input type="text" class="input">
-                            </div>
+                                </div>
                             </div>
                             <div class="input-div pass">
-                            <div class="i"> 
+                                <div class="i"> 
                                     <i class="bi bi-key-fill"></i>
-                            </div>
-                            <div class="div">
+                                </div>
+                                <div class="password">
                                     <h5>Senha</h5>
-                                    <input type="password" class="input">
-                            </div>
+                                    <input spellcheck="false" type="password" class="input" id="password">
+                                    <button class="toggle" type="button" onclick="togglePassword(this)"></button>
+                                </div>
                             </div>
                             <a href="#">Esqueceu a senha?</a>
                             <input type="submit" class="btn" value="Login">
