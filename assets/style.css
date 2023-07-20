@@ -411,7 +411,6 @@ text {
     z-index: 9;
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
-    opacity: 100;
     width: 1080px;
     height: 100vh;
     margin-left: auto;
@@ -419,11 +418,13 @@ text {
     @media screen and (max-width:1080px) { 
         grid-template-columns: repeat(1, 2fr);
         display: block;
-        z-index: 1;
+        z-index: 9;
         height: 100vh;
         width: 100vw;
     }
 }
+
+/* Login */
 
 #section0 .login-container{
     display: flex;
@@ -469,16 +470,19 @@ text {
     transition: 0.2s
 }
 
-#section0 .login-content text{
+#section0 .title {
     display: flex;
     justify-content: center;
     position: relative;
     font-style: normal;
-    padding: 2vh 2vh 4vh 2vh;
+    padding: 2vh 2vh 2vh 2vh;
 	color: #ffffff;
-	font-size:  1.5rem;
+	font-size:  2.4em;
     @media screen and (max-width:1080px) {
         margin: auto;
+    }
+    @media screen and (max-height:719px) {
+        font-size:  2em;
     }
 }
 
@@ -507,6 +511,13 @@ text {
 }
 
 /* login input */
+
+#section0 .bi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+}
 
 #section0 .input-div > div{
     position: relative;
@@ -597,13 +608,16 @@ text {
     cursor: pointer;
 }
 
-#section0 a{
-	display: block;
-	text-align: right;
+#section0 .forg-pass {
+	float: right;
+	font-size: 1.4em;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+#section0 a {
 	text-decoration: none;
-    padding: 2vh;
 	color: #FF6E00;
-	font-size: 0.9rem;
 	transition: 0.34s;
 }
 
@@ -633,6 +647,106 @@ text {
 	background-position: right;
     filter: drop-shadow(0px 0px 4px #FF6E00);
     font-weight: bolder;
+}
+
+#section0 .invite {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-style: normal;
+	color: #ffffff;
+	font-size:  1.4em;
+    padding-top: 2vh;
+    @media screen and (max-width:1080px) {
+        padding-bottom: 0vh;
+        margin: auto;
+    }
+}
+
+#section0 .to-register {
+    position: relative; 
+    font-style: normal;
+	font-size:  1.6em;
+    cursor: pointer;
+    margin: 0vh 2vh 2vh 2vh;
+    @media screen and (max-width:1080px) {
+        margin: auto;
+    }
+}
+
+/* Register */
+
+#section0 .register-container{
+    display: none;
+    justify-content: center;
+    margin: auto;
+    opacity: 0.9;
+    background-color: #000000;
+    filter: drop-shadow(0px 0px 4px #000000);
+    align-content: center;
+    padding: 2rem 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @media screen and (max-width:1080px) {
+        height: 100vh;
+        width: 100vw;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+#section0 .register-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+#section0 form{
+	width: 360px;
+}
+
+#section0 .register-content img{
+    height: 100px;
+    filter: drop-shadow(0px 0px 4px #ffffff);
+    @media screen and (max-width:1080px) {
+        display: none;
+    }
+}
+
+#section0 .register-content:hover img {
+    filter: drop-shadow(0px 0px 4px #ffffff) blur(1px) brightness(200%) contrast(200%);
+    transition: 0.2s
+}
+
+#section0 .register-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+    @media screen and (max-width:1080px) {
+        padding: 0px;
+    }
+}
+
+#section0 .register-content .input-div.one{
+	margin-top: 0;
+}
+
+#section0 .to-login {
+    position: relative;
+    font-style: normal;
+	font-size:  1.6em;
+    cursor: pointer;
+    @media screen and (max-width:1080px) {
+        margin: auto;
+    }
 }
 
 /* END of "Home" */

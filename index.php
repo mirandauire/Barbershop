@@ -72,12 +72,71 @@
                                 </div>
                                 <div class="password">
                                     <h5>Senha</h5>
-                                    <input spellcheck="false" type="password" class="input" id="password">
-                                    <button class="toggle" type="button" onclick="togglePassword(this)"></button>
+                                    <input spellcheck="false" type="password" class="input" id="password-login">
+                                    <button class="toggle" type="button" onclick="togglePasswordLogin(this)"></button>
                                 </div>
                             </div>
-                            <a href="#">Esqueceu a senha?</a>
-                            <input type="submit" class="btn" value="Login">
+                            <a href="#" class="forg-pass">Esqueceu a senha?</a>
+                            <input type="submit" class="btn" value="Login" href="#">
+                            <text class="invite">Ainda não está cadastrado?</text>
+                            <a class="to-register">Clique aqui</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="register-container">
+                    <div class="register-content">
+                        <form action="index.html">
+                            <img src="assets/images/logo-title-b.svg">
+                            <text class="title">Preencha o seu cadastro</text>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="user">
+                                    <h5>Nome</h5>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="bi bi-123"></i>
+                                </div>
+                                <div class="cpf">
+                                    <h5>CPF</h5>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="bi bi-telephone-inbound-fill"></i>
+                                </div>
+                                <div class="tel">
+                                    <h5>Telefone</h5>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </div>
+                                <div class="email">
+                                    <h5>E-mail</h5>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i"> 
+                                    <i class="bi bi-key-fill"></i>
+                                </div>
+                                <div class="password">
+                                    <h5>Senha</h5>
+                                    <input spellcheck="false" type="password" class="input" id="password-register">
+                                    <button class="toggle" type="button" onclick="togglePasswordRegister(this)"></button>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn" value="Cadastre-se" href="#">
+                            <text class="invite">Já está cadastrado?</text>
+                            <a class="to-login">Volte para o Login</a>
                         </form>
                     </div>
                 </div>
