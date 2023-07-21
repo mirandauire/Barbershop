@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <a class="logo" href="#"><img class="img_logo" src="assets/images/logo.svg"></img></a>
+    <a class="logo" href="index.php"><img class="img_logo" src="assets/images/logo.svg"></img></a>
     <div id="fake-navbar"></div>
     <div class="navbar">
         <ul>
@@ -54,7 +54,7 @@
             <div class="content">
                 <div class="login-container">
                     <div class="login-content">
-                        <form action="index.html">
+                        <form method="POST" action="login.php">
                             <img src="assets/images/logo-title-b.svg">
                             <text class="title">Seja bem-vindo!</text>
                             <div class="input-div one">
@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="user">
                                     <h5>Usuário</h5>
-                                    <input type="text" class="input">
+                                    <input name="usuario" type="text" class="input" required>
                                 </div>
                             </div>
                             <div class="input-div pass">
@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="password">
                                     <h5>Senha</h5>
-                                    <input spellcheck="false" type="password" class="input" id="password-login">
+                                    <input name="senha" spellcheck="false" type="password" class="input" id="password-login" required>
                                     <button class="toggle" type="button" onclick="togglePasswordLogin(this)"></button>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="register-container">
                     <div class="register-content">
-                        <form action="index.html">
+                        <form method="POST" action="register.php">
                             <img src="assets/images/logo-title-b.svg">
                             <text class="title">Preencha o seu cadastro</text>
                             <div class="input-div one">
