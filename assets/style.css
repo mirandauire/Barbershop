@@ -1,4 +1,5 @@
-/* "head of css" */
+/* "HEAD OF CSS"------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
@@ -17,7 +18,9 @@ body {
     font-size: 10px;
 }
 
-/* END of "head" */
+/* END of "Head" */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* "Navbar configuration" */
 
@@ -195,6 +198,8 @@ ul a:hover {
 
 /* END of "Navbar" */
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /* "Sections General" */
 
 .ic-title img {
@@ -253,7 +258,7 @@ ul a:hover {
 }
 
 #section8 {
-    height: 20vh;
+    height: auto;
 }
 
 .background {
@@ -278,12 +283,6 @@ ul a:hover {
 
 #section6 .background {
     background-image: url(images/3-Barba.jpg);
-}
-
-#section8 .background {
-    background-image: url(images/4-Hidratacao.jpg);
-    height: 20vh;
-    filter: blur(6px) brightness(10%);
 }
 
 #section4 .star-rating {
@@ -366,18 +365,10 @@ text {
     }
 }
 
-#section8 text {
-    font-style: normal;
-    font-size: 2.4em;
-    @media screen and (max-width:1080px) {
-        font-size: 1.8em;
-    }
-}
-
 /* END of "Sections Text" */
 
 
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 /* "Section Home" */
@@ -957,7 +948,7 @@ input:-webkit-autofill:active {
 }
 
 #card-6 .card-img-overlay {
-    background: url(images/services/Pintura.jpg);
+    background: url(images/services/Hidratação.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -971,7 +962,7 @@ input:-webkit-autofill:active {
 }
 
 #card-8 .card-img-overlay {
-    background: url(images/services/Selagem.jpg);
+    background: url(images/services/Pintura.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1086,12 +1077,8 @@ input:-webkit-autofill:active {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     @media screen and (max-width:1080px) {
-        height: 100vh;
+        height: auto;
         width: 100vw;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
     }
  }
 
@@ -1111,6 +1098,7 @@ input:-webkit-autofill:active {
 
  #section7 .checkbox-services label {
     padding-right: 20px;
+    padding-left: 10px;
  }
 
  #section7 .appointment form .message{
@@ -1124,6 +1112,7 @@ input:-webkit-autofill:active {
  }
 
  #section7 .appointment form span{
+    font-weight: bolder;
     font-size: 1.2rem;
     color:var(--black);
  }
@@ -1165,5 +1154,135 @@ input:-webkit-autofill:active {
 
 /* END of "Agendamento" */
 
+/* "Section Footer" */
 
-/* END OF ALL */
+#section8 .background {
+    z-index: -1;
+    position: absolute;
+    background-image: url(images/4-Hidratacao.jpg);
+    height: 20vh;
+    filter: blur(6px) brightness(10%);
+}
+
+#section8 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    padding-bottom: 2vh;
+}
+
+#section8 .ftt-linha1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1080px;
+}
+
+#section8 .ftt-linha2 {
+    display: flex;
+    width: 1080px;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+}
+
+#section8 .ftt-linha1 h2 {
+    font-style: normal;
+    font-size: 1.8em;
+    color: #fff;
+    width: auto;
+    margin: 0vh;
+    padding: 0vh;
+    padding-top: 2vh;
+    @media screen and (max-width:1080px) {
+        font-size: 1.2em;
+        padding-right: 3vw;
+    }
+}
+
+#section8 .ftt-linha1 p {
+    font-style: normal;
+    font-size: 1.4em;
+    color: #dcdcdc;
+    width: auto;
+    padding-top: 1vh;
+    padding-right: 1vw;
+    @media screen and (max-width:1080px) {
+        font-size: 1.0em;
+    }
+}
+
+#section8 .ftt-linha1 .ftt-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    width: 96px;
+    border-radius: 100%;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,1)) ;
+    z-index: 11;
+    @media screen and (max-width:1080px) { 
+        height: 72px;
+        width: 72px;
+    }
+ }
+ 
+ #section8 .ftt-linha1 .ftt-logo:hover {
+     filter: drop-shadow(0px 2px 4px rgba(0,0,0,1)) blur(1px) brightness(200%);
+     transition: 0.5s
+ }
+ 
+ #section8 .ftt-linha1 .ftt_img_logo {
+    height: 80px;
+    width: 80px;
+    @media screen and (max-width:1080px) { 
+        height: 60px;
+        width: 60px;
+    }
+ }
+
+ .ftt-instagram_icon {
+    cursor: pointer;
+    padding-top: 1vh;
+}
+
+.ftt-instagram_icon .bi-instagram {
+    color:#ffffff;
+    font-size: 1.6em;
+}
+
+.ftt-instagram_icon .bi-instagram:hover {
+    color: #FF6E00;
+    filter: drop-shadow(0px 0px 2px #FF6E00);
+    transition: 0.34s;
+}
+
+ #section8 .coluna2, .coluna3, .coluna4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+ #section8 .coluna1 {
+    display: flex;
+    margin: auto;
+}
+
+#section8 .ftt-linha2 text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #999999;
+    @media screen and (max-width:1080px) {
+        font-size: 1.2em;
+    }
+}
+
+/* END of "Footer" */
+
+/* END OF ALL--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

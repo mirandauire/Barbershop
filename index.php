@@ -264,7 +264,7 @@
                 <h2>Agendamento<span class="ic-title"><img src="assets/images/logo-title-w.svg"></img></span></h2>
                 <div class="content">
                     <h3>Faça seu agendamento:</h3>
-                    <p><span class="ic-title"><i class="bi bi-exclamation-triangle-fill"></i></span>Lembre-se que para fazer o agendamento você precisa estar cadastrado e logado.</p>
+                    <p><span class="ic-title"><i class="bi bi-exclamation-triangle-fill"></i></span>Lembre-se que para fazer o agendamento você precisa estar logado na sua conta.</p>
                     <div class="appointment" id="appointment">
                         <form action="appointment.php" method="POST">
                         <span>Escolha o serviço:</span>
@@ -290,7 +290,28 @@
 
             <div id="section8">
                 <div class="background"></div>
-                <text>&copy; 2023 Copyright &reg; Todos direitos reservados</text>
+                <div class="content">
+                    <div class="ftt-linha1">
+                        <div class="coluna1">
+                            <a class="ftt-logo" href="index.php"><img class="ftt_img_logo" src="assets/images/logo.svg"></img></a>
+                        </div>
+                        <div class="coluna2">
+                            <h2>Horário de funcionamento:</h2>
+                            <p>Nós funcionamos de Segunda a Sábado, das 9h às 19h, com estacionamento gratuito.</p>
+                        </div>
+                        <div class="coluna3">
+                            <h2>Onde nós estamos?</h2>
+                            <p>Nós estamos na Rua César Zama, 05 - no bairro da Barra, Salvador - BA, CEP: 40140-030.</p>
+                        </div>
+                        <div class="coluna4">
+                            <h2>Redes Sociais</h2>
+                            <a class="ftt-instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="ftt-linha2">
+                        <text>&copy; 2023 Copyright &reg; Todos direitos reservados</text>
+                    </div>
+                </div>
             </div>
 
         </div>
