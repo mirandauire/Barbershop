@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="user">
                                     <h5>Usuário</h5>
-                                    <input name="usuario" type="text" class="input" required>
+                                    <input name="usuario" type="text" class="input" id="user-login" required>
                                 </div>
                             </div>
                             <div class="input-div pass">
@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="user">
                                     <h5>Nome</h5>
-                                    <input type="text" class="input">
+                                    <input type="text" class="input" required>
                                 </div>
                             </div>
                             <div class="input-div one">
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="cpf">
                                     <h5>CPF</h5>
-                                    <input type="text" class="input">
+                                    <input type="text" class="input" required>
                                 </div>
                             </div>
                             <div class="input-div one">
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="tel">
                                     <h5>Telefone</h5>
-                                    <input type="text" class="input">
+                                    <input type="text" class="input" required>
                                 </div>
                             </div>
                             <div class="input-div one">
@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="email">
                                     <h5>E-mail</h5>
-                                    <input type="text" class="input">
+                                    <input type="text" class="input" required>
                                 </div>
                             </div>
                             <div class="input-div pass">
@@ -130,7 +130,7 @@
                                 </div>
                                 <div class="password">
                                     <h5>Senha</h5>
-                                    <input spellcheck="false" type="password" class="input" id="password-register">
+                                    <input spellcheck="false" type="password" class="input" id="password-register" required>
                                     <button class="toggle" type="button" onclick="togglePasswordRegister(this)"></button>
                                 </div>
                             </div>

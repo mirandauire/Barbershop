@@ -512,6 +512,16 @@ text {
 
 /* login input */
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    /* Fix autofill */
+    -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0) inset;
+    -webkit-text-fill-color: white;
+    mix-blend-mode: exclusion;
+}
+
 #section0 .bi {
     display: flex;
     justify-content: center;
