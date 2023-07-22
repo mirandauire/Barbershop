@@ -147,9 +147,39 @@
             <div id="section1">
                 <h2>Sobre nós<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
                 <div class="content">
-                    <p>A Don Felix é a barbearia da sua época. Focada em excelência, ela conta com tudo que o homem moderno precisa. Um ambiente confortável, descontraído e exclusivamente masculino, com cuidados para todos os estilos de barba e cabelo, além de serviços como o "Dia do Noivo". Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada ou assistir aos seus esportes favoritos. Aqui cada detalhe é minuciosamente trabalhado, desde o corte perfeito até a barba impecável. Na Don Félix, a amizade se une à expertise, proporcionando uma experiência inigualável. Descubra o poder de uma verdadeira conexão entre barbeiro e cliente. Venha para a nossa barbearia e sinta a diferença.</p>
-                    <!-- <span>Seja um de nossos clientes exclusivos!</span> -->
-                    <div class="img_section"></div>
+                    <div class="s1-linha1">
+                        <p>A Don Felix é a barbearia da sua época. Focada em excelência, ela conta com tudo que o homem moderno precisa. Um ambiente confortável, descontraído e exclusivamente masculino, com cuidados para todos os estilos de barba e cabelo, além de serviços como o "Dia do Noivo". Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada ou assistir aos seus esportes favoritos. Aqui cada detalhe é minuciosamente trabalhado, desde o corte perfeito até a barba impecável. Na Don Félix, a amizade se une à expertise, proporcionando uma experiência inigualável. Descubra o poder de uma verdadeira conexão entre barbeiro e cliente. Venha para a nossa barbearia e sinta a diferença.</p>
+                        <div class="img_section"></div>
+                    </div>
+                    <div class="s1-linha2">
+                        <h3>Equipe Principal</h3>
+                        <div class="cards">
+                            <div id="team-card-0">
+                                <div class="card text-bg-dark"> 
+                                    <div class="card-img-overlay"></div>
+                                    <h5 class="card-title">Antoni Rafael</h5>
+                                </div>
+                            </div>
+                            <div id="team-card-1">
+                                <div class="card text-bg-dark"> 
+                                    <div class="card-img-overlay"></div>
+                                    <h5 class="card-title">Johnny Silva</h5>
+                                </div>
+                            </div>
+                            <div id="team-card-2">
+                                <div class="card text-bg-dark"> 
+                                    <div class="card-img-overlay"></div>
+                                    <h5 class="card-title">José Sulivan</h5>
+                                </div>
+                            </div>
+                            <div id="team-card-3">
+                                <div class="card text-bg-dark"> 
+                                    <div class="card-img-overlay"></div>
+                                    <h5 class="card-title">Frank Carlos</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
