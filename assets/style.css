@@ -941,6 +941,7 @@ input:-webkit-autofill:active {
 
 #section3 .card.text-bg-dark:hover .card-img-overlay {
     filter: grayscale() blur(3px) brightness(50%) contrast(150%);
+    mix-blend-mode: normal;
     transform: scale(1.034);
     transition: 0.5s;
     cursor: pointer;
@@ -1001,6 +1002,10 @@ input:-webkit-autofill:active {
     transition: 0.5s;
 }
 
+#section3 .card-img-overlay {
+    filter:  saturate(130%) brightness(110%) contrast(110%) hue-rotate(-10deg); 
+}
+
 #card-0 .card-img-overlay {
     background: url(images/services/Cabelo.jpg);
     background-repeat: no-repeat;
@@ -1023,10 +1028,11 @@ input:-webkit-autofill:active {
 }
 
 #card-3 .card-img-overlay {
-    background: url(images/services/Pezinho.jpg);
+    background: url(images/services/Sobrancelha.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter:  saturate(130%) brightness(110%) contrast(130%) hue-rotate(-10deg); 
 }
 
 #card-4 .card-img-overlay {
@@ -1034,10 +1040,11 @@ input:-webkit-autofill:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter:  saturate(130%) brightness(110%) contrast(130%) hue-rotate(-10deg); 
 }
 
 #card-5 .card-img-overlay {
-    background: url(images/services/Hidratação.jpg);
+    background: url(images/services/Escova.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1048,6 +1055,7 @@ input:-webkit-autofill:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter:  saturate(130%) brightness(110%) contrast(110%) hue-rotate(-5deg); 
 }
 
 #card-7 .card-img-overlay {
@@ -1055,6 +1063,7 @@ input:-webkit-autofill:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter:  saturate(130%) brightness(100%) contrast(150%) hue-rotate(-10deg); 
 }
 
 #card-8 .card-img-overlay {
@@ -1062,6 +1071,7 @@ input:-webkit-autofill:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter:  saturate(130%) brightness(100%) contrast(150%) hue-rotate(-10deg); 
 }
 
 #card-9 .card-img-overlay {
@@ -1069,6 +1079,7 @@ input:-webkit-autofill:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter:  saturate(130%) brightness(100%) contrast(150%) hue-rotate(-10deg); 
 }
 
 /* END of "Serviços" */
