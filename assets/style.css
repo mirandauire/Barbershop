@@ -827,13 +827,14 @@ input:-webkit-autofill:active {
     height: 50vh;
     width: auto;
     margin: 1vh;
+    filter:  saturate(110%) brightness(100%) contrast(110%) hue-rotate(-10deg); 
     @media screen and (max-width:1080px) {
         margin: 0vh;
     }
 }
 
 #section1 .card.text-bg-dark:hover .card-img-overlay {
-    filter: brightness(110%) contrast(110%);
+    filter:  saturate(110%) brightness(110%) contrast(100%); 
     transform: scale(1.034);
     transition: 0.5s;
     cursor: pointer;
