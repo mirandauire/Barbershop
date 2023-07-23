@@ -62,10 +62,6 @@ hideregister.forEach((hideregister) => {
 });
 
 
-  
-
-
-
 
 
 ;

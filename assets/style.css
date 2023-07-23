@@ -1098,6 +1098,7 @@ input:-webkit-autofill:active {
     margin-right: auto;
     width: 1080px;
     margin-bottom: 15vh;
+    padding-top: 7.5vh;
     @media screen and (max-width:1080px) { 
         grid-template-columns: repeat(1, 2fr);
         width: 1080px;
@@ -1107,17 +1108,36 @@ input:-webkit-autofill:active {
     }
 }
 
+#section5 .contact-info {
+    @media screen and (max-width:1080px) { 
+        padding-bottom: 7.5vh;
+    }
+}
+
+#section5 .contact-info i {
+    font-size: 1.6em;
+    padding-right: 2vw;
+}
+
+#section5 span {
+    font-weight: bolder;
+}
+
 #section5 p {
     float: left;
     width: 648px;
     padding-right: 10vh;
+    padding-top: 0vh;
     @media screen and (max-width:1080px) {
         float: center;
         width: 100%;
-        padding-top: 3.75vh;
         padding-right: 0vw;
-        padding-bottom: 7.5vh;
     }
+}
+
+#section5 .payment-text i {
+    font-size: 1.2em;
+    padding-right: 0vw;
 }
 
 /* Google maps */
@@ -1380,6 +1400,14 @@ input:-webkit-autofill:active {
  #section8 .coluna1 {
     display: flex;
     margin: auto;
+}
+
+#section8 .bi-telephone-inbound-fill {
+    font-size: 1em;
+}
+
+#section8 .coluna4 p {
+    padding-right: 2vw;
 }
 
 #section8 .ftt-linha2 text {

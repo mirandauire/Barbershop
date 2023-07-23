@@ -271,12 +271,19 @@
                 <img class="star-rating" src="assets/images/icons/star-rating.svg"></img>
                 <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”</text>
             </div>
-            <div id="section5">
+            <div id="section5"> 
                 <h2>Contato<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
-                        Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
-                    </p>
+                    <div class="contact-info">
+                        <p><span><i class="bi bi-geo-alt-fill"></i>Endereço: </span>Rua César Zama, 05 - Barra, 40140-030.</p>
+                        <p><span><i class="bi bi-telephone-inbound-fill"></i>Telefone: </span>(071) 9 9993-4070</p>
+                        <p><span><i class="bi bi-envelope-at-fill"></i>E-mail: </span>donferlix@barbershop.com</p>
+                        <p><span><i class="bi bi-instagram"></i>Instagram: </span>@donfelixbarbershop</p>
+                        <div class="payment-forms">
+                            <p><span><i class="bi bi-credit-card-fill"></i>Formas de Pagamento: </span></p>
+                            <p class="payment-text"><i class="bi bi-coin"></i> Dinheiro, PIX, Cartão de Crédito e Débito: Visa, Mastercard, Hipercard, Elo, Maestro/Redeshop, Visa Electron.</p>
+                        </div>
+                    </div>
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=640&amp;height=360&amp;hl=en&amp;q=Don Felix Barbershop - Rua César Zama - Barra, Salvador - BA&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -334,8 +341,9 @@
                             <p>Nós estamos na Rua César Zama, 05 - no bairro da Barra, Salvador - BA, CEP: 40140-030.</p>
                         </div>
                         <div class="coluna4">
-                            <h2>Redes Sociais</h2>
+                            <h2>Contatos</h2>
                             <a class="ftt-instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
+                            <p><span><i class="bi bi-telephone-inbound-fill"></i></span> 71 9 9993-4070</p>
                         </div>
                     </div>
                     <div class="ftt-linha2">
