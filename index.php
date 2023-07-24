@@ -1,5 +1,6 @@
     <!DOCTYPE html>
     <html lang="pt-BR">
+    <?php include __DIR__."/dependencias/login.php"; ?>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,7 +62,7 @@
                 <div class="content">
                     <div class="login-container">
                         <div class="login-content">
-                            <form method="POST" action="dependencias/login.php">
+                            <form method="POST" action="">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Seja bem-vindo!</text>
                                 <div class="input-div one">
@@ -79,12 +80,14 @@
                                     </div>
                                     <div class="password">
                                         <h5>Senha</h5>
-                                        <input name="senha" spellcheck="false" type="password" class="input" id="password-login" required>
+                                        <input name="senha" spellcheck="false" type="senha" class="input" id="password-login" required>
                                         <button class="toggle" type="button" onclick="togglePasswordLogin(this)"></button>
                                     </div>
                                 </div>
                                 <a href="#" class="forg-pass">Esqueceu a senha?</a>
-                                <input type="submit" class="btn" value="Login" href="#">
+                                <input type="submit" class="btn"
+                               name="botaoConfirmar" 
+                                value="Login" href="#">
                                 <text class="invite">Ainda não está cadastrado?</text>
                                 <a class="to-register">Clique aqui</a>
                             </form>
@@ -92,7 +95,7 @@
                     </div>
                     <div class="register-container">
                         <div class="register-content">
-                            <form method="POST" action="dependencias/cadastro.php">
+                            <form method="POST" action="">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Preencha o seu cadastro</text>
                                 <div class="input-div one">
@@ -101,7 +104,7 @@
                                     </div>
                                     <div class="user">
                                         <h5>Nome</h5>
-                                        <input type="text" class="input" required>
+                                        <input type="text" class="input" name="nome" required>
                                     </div>
                                 </div>
                                 <div class="input-div one">
@@ -110,7 +113,7 @@
                                     </div>
                                     <div class="cpf">
                                         <h5>CPF</h5>
-                                        <input type="number" class="input" required>
+                                        <input type="number" class="input" name="CPF" required>
                                     </div>
                                 </div>
                                 <div class="input-div one">
@@ -128,7 +131,7 @@
                                     </div>
                                     <div class="email">
                                         <h5>E-mail</h5>
-                                        <input type="email" class="input" required>
+                                        <input type="email" class="input" name="email" required>
                                     </div>
                                 </div>
                                 <div class="input-div pass">
@@ -137,11 +140,13 @@
                                     </div>
                                     <div class="password">
                                         <h5>Senha</h5>
-                                        <input spellcheck="false" type="password" class="input" id="password-register" required>
+                                        <input spellcheck="false" type="password" class="input" id="password-register" name="senha" required>
                                         <button class="toggle" type="button" onclick="togglePasswordRegister(this)"></button>
                                     </div>
                                 </div>
-                                <input type="submit" class="btn" value="Cadastre-se" href="#">
+                                <input type="submit" class="btn" 
+                              name="botaoConfirmar"  
+                                value="cadastrar" href="#">
                                 <text class="invite">Já está cadastrado?</text>
                                 <a class="to-login">Volte para o Login</a>
                             </form>

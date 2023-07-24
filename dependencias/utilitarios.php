@@ -1,8 +1,8 @@
 <?php
-$servidor="192.168.15.18";
-$nome="root";
-$senha="root";
-$bancoDeDados="mydb";
+$servidor="sql200.infinityfree.com";
+$nome="if0_34674594";
+$senha="Vs5QFc8qslf";
+$bancoDeDados="if0_34674594_barbearia";
 $mysql=new mysqli($servidor,$nome,$senha,$bancoDeDados);
 if($mysql->connect_error){
   die("houve um erro de conexão");
