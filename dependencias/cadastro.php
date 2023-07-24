@@ -18,19 +18,3 @@ $fsenha=filter_input(INPUT_POST,"senha",FILTER_DEFAULT);
 
 
 }
-
-
-?>
-<form method="POST" action="">
-  <label>Nome</label>
-  <input type="text" name="nome">
-  <label>CPF</label>
-<input type="text" name="CPF">
-<label>Telefone</label>
-<input type="text" name="telefone">
-<label>Email</label>
-<input type="text" name="email">
-<label>Senha</label>
-<input type="text" name="senha">
-<input type="submit" name="botaoConfirmar">
-</form>
