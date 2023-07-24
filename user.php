@@ -14,27 +14,57 @@
     <style></style>
 </head>
 <body style="background-color: black;">
-    <a class="logo" href="index.php"><img class="img_logo" src="assets/images/logo.svg"></img></a>
-    <div id="fake-navbar"></div>
-    <div class="navbar">
-        <ul>
-            <li><a href="#section0">home</a></li>
-            <li><a href="#section1">sobre nós</a></li>
-            <li><a href="#section3">serviços</a></li>
-            <li><a href="#section5">contato</a></li>
-            <li><a href="#section7">agendamento</a></li>
-        </ul>
-        <span class="navbar-rtext">Página de Usuário</span>
-        <a class="instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
-        <div id="min-navbar">
+        <div id="fake-navbar"></div>
+        <nav class="navbar">
+            <a class="logo" href="index.php"><img class="img_logo" src="assets/images/logo.svg"></img></a>
             <ul>
-                <li><a href="#section0"><i class="bi bi-house-door-fill"></i></a></li>
-                <li><a href="#section1"><i class="bi bi-bookmarks-fill"></a></i></li>
-                <li><a href="#section3"><i class="bi bi-scissors"></i></a></li>
-                <li><a href="#section5"><i class="bi bi-telephone-fill"></i></a></li>
-                <li><a href="#section7"><i class="bi bi-clock-fill"></i></a></li>
+                <li><a href="#section0">home</a></li>
+                <li><a href="#section1">sobre nós</a></li>
+                <li><a href="#section3">serviços</a></li>
+                <li><a href="#section5">contato</a></li>
+                <li><a href="#section7">agendamento</a></li>
             </ul>
+            <span class="navbar-rtext">Aberto de Segunda a Sábado, das 9h às 19h</span>
+            <a class="instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
+            <div id="min-navbar">
+                <ul>
+                    <li><a href="#section0"><i class="bi bi-house-door-fill"></i></a></li>
+                    <li><a href="#section1"><i class="bi bi-bookmarks-fill"></a></i></li>
+                    <li><a href="#section3"><i class="bi bi-scissors"></i></a></li>
+                    <li><a href="#section5"><i class="bi bi-telephone-fill"></i></a></li>
+                    <li><a href="#section7"><i class="bi bi-clock-fill"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sections">
+
+            <header id="section0">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <figure class="carousel-item active">
+                            <img src="assets/images/alternative/4.jpg" class="d-block w-100" alt="images/alternative/2.jpg">
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/images/alternative/3.jpg" class="d-block w-100" alt="images/alternative/3.jpg">
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/images/alternative/5.jpg" class="d-block w-100" alt="images/alternative/1.jpg">
+                        </figure>
+                    </div>         
+                </div>
+                <div class="content">
+                    <div class="login-container">
+                        <div class="login-content">
+                            <form method="POST" action="index.php" method=GET>
+                                <img src="assets/images/logo-title-b.svg">
+                                <text class="title">Login feito com sucesso!</text>
+                                <button type="submit" class="btn">Volte para a Página Principal</button>
+                            </form>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="assets/js/main.js"></script>                
+                </div>
+            </header>
         </div>
-    </div>
 </body>
 </html>

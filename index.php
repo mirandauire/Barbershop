@@ -312,7 +312,7 @@
                     <h3>Faça seu agendamento:</h3>
                     <p><span class="ic-title"><i class="bi bi-exclamation-triangle-fill"></i></span>Lembre-se que para fazer o agendamento você precisa estar logado na sua conta.</p>
                     <div class="appointment" id="appointment">
-                        <form action="appointment.php" method="POST">
+                        <form action=" " method="POST">
                         <span>Escolha o serviço:</span>
                             <div class="checkbox-services">
                                 <input type="checkbox" class="services" name="services" value="cabelo" id="service0"><label for="service0">Cabelo</label><div class=price>R$30</div>
