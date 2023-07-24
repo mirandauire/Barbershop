@@ -62,5 +62,4 @@ hideregister.forEach((hideregister) => {
 	});
 });
 
-
 ;

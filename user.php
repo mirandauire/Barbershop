@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <style></style>
 </head>
-<body>
+<body style="background-color: black;">
     <a class="logo" href="index.php"><img class="img_logo" src="assets/images/logo.svg"></img></a>
     <div id="fake-navbar"></div>
     <div class="navbar">

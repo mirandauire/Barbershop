@@ -194,7 +194,7 @@
 
             <section id="section2">
                 <div class="background"></div>
-                <text>“Don Félix inaugura Barbearia Premium na Barra”</text>
+                <text>“Don Félix inaugura Barbearia Premium na Barra”.</text>
             </section>
 
             <section id="section3">
@@ -278,7 +278,7 @@
             <section id="section4">
                 <div class="background"></div>
                 <img class="star-rating" src="assets/images/icons/star-rating.svg"></img>
-                <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”</text>
+                <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”.</text>
             </section>
             <section id="section5"> 
                 <h2>Contato<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
