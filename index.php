@@ -1,4 +1,5 @@
     <!DOCTYPE html>
+   <?php include __DIR__."/dependencias/login.php"; ?>
     <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
@@ -54,7 +55,7 @@
                 <div class="content">
                     <div class="login-container">
                         <div class="login-content">
-                            <form method="POST" action="login.php">
+                            <form method="POST" action="">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Seja bem-vindo!</text>
                                 <div class="input-div one">
@@ -72,12 +73,14 @@
                                     </div>
                                     <div class="password">
                                         <h5>Senha</h5>
-                                        <input name="senha" spellcheck="false" type="password" class="input" id="password-login" required>
+                                        <input name="senha" spellcheck="false" type="senha" class="input" id="password-login" required>
                                         <button class="toggle" type="button" onclick="togglePasswordLogin(this)"></button>
                                     </div>
                                 </div>
                                 <a href="#" class="forg-pass">Esqueceu a senha?</a>
-                                <input type="submit" class="btn" value="Login" href="#">
+                                <input type="submit" class="btn"
+                               name="botaoConfirmar" 
+                                value="Login" href="#">
                                 <text class="invite">Ainda não está cadastrado?</text>
                                 <a class="to-register">Clique aqui</a>
                             </form>
@@ -85,7 +88,7 @@
                     </div>
                     <div class="register-container">
                         <div class="register-content">
-                            <form method="POST" action="register.php">
+                            <form method="POST" action="">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Preencha o seu cadastro</text>
                                 <div class="input-div one">
@@ -94,7 +97,10 @@
                                     </div>
                                     <div class="user">
                                         <h5>Nome</h5>
-                                        <input type="text" class="input" required>
+                                        <input type="text" class="input"
+                           name="nome" 
+                           
+                           required>
                                     </div>
                                 </div>
                                 <div class="input-div one">
@@ -103,7 +109,8 @@
                                     </div>
                                     <div class="cpf">
                                         <h5>CPF</h5>
-                                        <input type="number" class="input" required>
+                                        <input type="number" class="input"
+                                name="CPF"        required>
                                     </div>
                                 </div>
                                 <div class="input-div one">
@@ -112,7 +119,8 @@
                                     </div>
                                     <div class="tel">
                                         <h5>Telefone</h5>
-                                        <input type="number" class="input" required>
+                                        <input type="number" class="input"
+                                   required>
                                     </div>
                                 </div>
                                 <div class="input-div one">
@@ -121,7 +129,8 @@
                                     </div>
                                     <div class="email">
                                         <h5>E-mail</h5>
-                                        <input type="email" class="input" required>
+                                        <input type="email" class="input"
+                              name="email"          required>
                                     </div>
                                 </div>
                                 <div class="input-div pass">
@@ -130,11 +139,14 @@
                                     </div>
                                     <div class="password">
                                         <h5>Senha</h5>
-                                        <input spellcheck="false" type="password" class="input" id="password-register" required>
+                                        <input spellcheck="false" type="password" class="input" id="password-register"
+                               name="senha"         required>
                                         <button class="toggle" type="button" onclick="togglePasswordRegister(this)"></button>
                                     </div>
                                 </div>
-                                <input type="submit" class="btn" value="Cadastre-se" href="#">
+                                <input type="submit" class="btn" 
+                              name="botaoConfirmar"  
+                                value="cadastrar" href="#">
                                 <text class="invite">Já está cadastrado?</text>
                                 <a class="to-login">Volte para o Login</a>
                             </form>
@@ -271,19 +283,12 @@
                 <img class="star-rating" src="assets/images/icons/star-rating.svg"></img>
                 <text>“Primeira vez na barbearia e saí plenamente satisfeito. Além do resultado fantástico de cabelo e barba, o atendimento do Reny foi espetacular. Virei freguês. Continuo freguês”</text>
             </div>
-            <div id="section5"> 
+            <div id="section5">
                 <h2>Contato<span class="ic-title"><img src="assets/images/logo-title-b.svg"></img></span></h2>
                 <div class="content">
-                    <div class="contact-info">
-                        <p><span><i class="bi bi-geo-alt-fill"></i>Endereço: </span>Rua César Zama, 05 - Barra, 40140-030.</p>
-                        <p><span><i class="bi bi-telephone-inbound-fill"></i>Telefone: </span>(071) 9 9993-4070</p>
-                        <p><span><i class="bi bi-envelope-at-fill"></i>E-mail: </span>donferlix@barbershop.com</p>
-                        <p><span><i class="bi bi-instagram"></i>Instagram: </span>@donfelixbarbershop</p>
-                        <div class="payment-forms">
-                            <p><span><i class="bi bi-credit-card-fill"></i>Formas de Pagamento: </span></p>
-                            <p class="payment-text"><i class="bi bi-coin"></i> Dinheiro, PIX, Cartão de Crédito e Débito: Visa, Mastercard, Hipercard, Elo, Maestro/Redeshop, Visa Electron.</p>
-                        </div>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor vero doloremque maiores exercitationem est rerum iste delectus ab incidunt fugit velit voluptates inventore similique, totam, aliquam non quibusdam. Et.
+                        Accusamus, possimus eaque sequi error explicabo harum rem asperiores suscipit odio qui sit doloribus eveniet debitis eum autem itaque! Autem, ab architecto nemo quas asperiores maiores eaque nostrum velit praesentium.
+                    </p>
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=640&amp;height=360&amp;hl=en&amp;q=Don Felix Barbershop - Rua César Zama - Barra, Salvador - BA&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -341,9 +346,8 @@
                             <p>Nós estamos na Rua César Zama, 05 - no bairro da Barra, Salvador - BA, CEP: 40140-030.</p>
                         </div>
                         <div class="coluna4">
-                            <h2>Contatos</h2>
+                            <h2>Redes Sociais</h2>
                             <a class="ftt-instagram_icon" href="https://www.instagram.com/donfelixbarbershop/"><i class="bi bi-instagram"></i></a>
-                            <p><span><i class="bi bi-telephone-inbound-fill"></i></span> 71 9 9993-4070</p>
                         </div>
                     </div>
                     <div class="ftt-linha2">
