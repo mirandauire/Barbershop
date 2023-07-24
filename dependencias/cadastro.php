@@ -1,5 +1,5 @@
 <?php
-include_once("ultilitarios.php");
+include_once("utilitarios.php");
 
 //checando se o botão de confirmar foi apertado.
 if(isset($botaoConfirmar)){

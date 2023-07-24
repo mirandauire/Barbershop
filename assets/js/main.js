@@ -33,6 +33,7 @@ const togglePasswordRegister = (button) => {
 	input.type = input.type === "password" ? "text" : "password";
 }
 
+
 // Hide Login and Show Register
 
 const hidelogin = document.querySelectorAll(".to-register");
@@ -60,8 +61,6 @@ hideregister.forEach((hideregister) => {
     logincontainer.style.display = "flex";
 	});
 });
-
-
 
 
 ;

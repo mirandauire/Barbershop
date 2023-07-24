@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Credenciais incorretas, exibir mensagem de erro
+        header("Location: index.php#section0");
         $erroLogin = "Usuário ou senha inválidos!";
     }
 }
