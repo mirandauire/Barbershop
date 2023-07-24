@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 include_once("utilitarios.php");
 
 // Verifica se o formulário foi enviado
@@ -12,20 +14,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       die("Erro de conexão: " . $mysql->connect_error);
   }
 
-  // Consulta para verificar as credenciais (substitua "tabela_usuarios" pelo nome da tabela que você está usando)
-  $sql = "SELECT * FROM Cliente WHERE nome='$usuario' AND senha='$senha'";
+  // Consulta na tabela Cliente para verificar as credenciais
+  $sql = "SELECT * FROM Cliente WHERE (nome='$usuario' OR email='$usuario' OR cpf='$usuario') AND senha='$senha'";
   $result = $mysql->query($sql);
 
   if ($result->num_rows == 1) {
       // Credenciais corretas, o usuário tem acesso
-      header("Location: user.php");
-      echo "Login bem-sucedido!";
+      $_SESSION["sucesso_login"] = "Oi, " . $usuario . ". Você já está logado.";
+      header("Location: index.php");
+      exit();
   } else {
-      // Credenciais incorretas, o usuário não tem acesso
-      echo "Email ou senha incorretos.";
+      // Credenciais incorretas, o usuário não tem acesso 
+      $_SESSION["erro_login"] = "Usuário ou senha incorreto(s).";
+      header("Location: index.php");
+      exit();
   }
 
   // Fechar a conexão
   $mysql->close();
 }
+
 ?>

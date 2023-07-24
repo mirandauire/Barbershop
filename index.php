@@ -1,5 +1,6 @@
     <!DOCTYPE html>
     <html lang="pt-BR">
+    <?php session_start();?>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +21,7 @@
         <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
+        <audio autoplay loop><source src="assets/song/Blues After Hours (Instrumental) - Pee Wee Crayton (128 kbps-30v).mp3" type="audio/mpeg"></audio>
         <div id="fake-navbar"></div>
         <nav class="navbar">
             <a class="logo" href="index.php"><img class="img_logo" src="assets/images/logo.svg"></img></a>
@@ -64,6 +66,28 @@
                             <form method="POST" action="login.php">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Seja bem-vindo!</text>
+                                <?php
+                                    // Verifica se há uma mensagem de sucesso de login na sessão
+                                    $sucesso_login = isset($_SESSION["sucesso_login"]) ? $_SESSION["sucesso_login"] : null;
+
+                                    // Imprime a mensagem de sucesso de login
+                                    if (!empty($sucesso_login)) {
+                                        echo '<p class="sucesso-login" style="margin-bottom: 0rem;"><i class="bi bi-person-check-fill"></i>' . htmlspecialchars($sucesso_login) . '</p>',
+                                        '<a class="erro" href="logout.php" style="margin-bottom: 1rem; justify-content: center; padding-top: 1vh; font-size: 1.4em; font-weight: normal; color: #FF6E00;">' . "Clique aqui para sair" . '<i class="bi bi-box-arrow-right" style="padding-right: 0vw; padding-left: 1vw;"></i></a>';
+                                    }
+                                ?>
+                                <?php
+                                    // Verifica se há uma mensagem de sucesso de cadastro na sessão
+                                    $sucesso_registro = isset($_SESSION["sucesso_registro"]) ? $_SESSION["sucesso_registro"] : null;
+
+                                    // Remove a mensagem de sucesso de cadastro após refresh na página
+                                    unset($_SESSION["sucesso_registro"]);
+
+                                    // Imprime a mensagem de sucesso de cadastro
+                                    if (!empty($sucesso_registro)) {
+                                        echo '<p class="sucesso-register">' . htmlspecialchars($sucesso_registro) . '</p>';
+                                    }
+                                ?>
                                 <div class="input-div one">
                                     <div class="i">
                                         <i class="bi bi-person-fill"></i>
@@ -83,6 +107,18 @@
                                         <button class="toggle" type="button" onclick="togglePasswordLogin(this)"></button>
                                     </div>
                                 </div>
+                                <?php
+                                    // Verifica se há uma mensagem de erro na sessão
+                                    $erro_login = isset($_SESSION["erro_login"]) ? $_SESSION["erro_login"] : null;
+
+                                    // Remove a mensagem de erro após refresh na página
+                                    unset($_SESSION["erro_login"]);
+
+                                    // Imprime a mensagem de erro
+                                    if (!empty($erro_login)) {
+                                        echo '<p class="erro">' . htmlspecialchars($erro_login) . '</p>';
+                                    }
+                                ?>
                                 <a href="#" class="forg-pass">Esqueceu a senha?</a>
                                 <input type="submit" class="btn"
                                name="botaoConfirmar" 

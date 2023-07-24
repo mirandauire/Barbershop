@@ -1,5 +1,7 @@
 <?php
-include_once("utilitarios.php"); // Inclui o arquivo com a configuração da conexão
+
+session_start();
+include_once("utilitarios.php");
 
 // Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -10,13 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    // Verificar a conexão (remova essa parte, pois a conexão já foi estabelecida em "utilitario.php")
-
     // Inserir os dados na tabela de usuários (substitua "tabela_usuarios" pelo nome da tabela que você está usando)
     $sql = "INSERT INTO Cliente (nome, CPF, senha, telefone, email) VALUES ('$nome', '$CPF', '$senha', '$telefone', '$email')";
 
     if ($mysql->query($sql) === true) {
-        echo "Cadastro realizado com sucesso!";
+        $_SESSION["sucesso_registro"] = "Cadastro realizado com sucesso!";
         header("Location: index.php");
     } else {
         echo "Erro ao cadastrar: " . $mysql->error;
@@ -25,4 +25,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Fechar a conexão
   $mysql->close();
+
 ?>
