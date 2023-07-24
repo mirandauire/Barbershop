@@ -1,6 +1,5 @@
     <!DOCTYPE html>
     <html lang="pt-BR">
-    <?php include __DIR__."/dependencias/login.php"; ?>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +61,7 @@
                 <div class="content">
                     <div class="login-container">
                         <div class="login-content">
-                            <form method="POST" action="">
+                            <form method="POST" action="login.php">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Seja bem-vindo!</text>
                                 <div class="input-div one">
@@ -80,7 +79,7 @@
                                     </div>
                                     <div class="password">
                                         <h5>Senha</h5>
-                                        <input name="senha" spellcheck="false" type="senha" class="input" id="password-login" required>
+                                        <input name="senha" spellcheck="false" type="password" class="input" id="password-login" required>
                                         <button class="toggle" type="button" onclick="togglePasswordLogin(this)"></button>
                                     </div>
                                 </div>
@@ -95,7 +94,7 @@
                     </div>
                     <div class="register-container">
                         <div class="register-content">
-                            <form method="POST" action="">
+                            <form method="POST" action="cadastro.php">
                                 <img src="assets/images/logo-title-b.svg">
                                 <text class="title">Preencha o seu cadastro</text>
                                 <div class="input-div one">
@@ -122,7 +121,7 @@
                                     </div>
                                     <div class="tel">
                                         <h5>Telefone</h5>
-                                        <input type="number" class="input" required>
+                                        <input type="number" class="input" name="telefone" required>
                                     </div>
                                 </div>
                                 <div class="input-div one">
@@ -144,9 +143,7 @@
                                         <button class="toggle" type="button" onclick="togglePasswordRegister(this)"></button>
                                     </div>
                                 </div>
-                                <input type="submit" class="btn" 
-                              name="botaoConfirmar"  
-                                value="cadastrar" href="#">
+                                <input type="submit" class="btn" name="botaoConfirmar" value="cadastrar" href="#">
                                 <text class="invite">Já está cadastrado?</text>
                                 <a class="to-login">Volte para o Login</a>
                             </form>

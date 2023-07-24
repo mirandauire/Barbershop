@@ -8,19 +8,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema if0_34674594_barbearia
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema if0_34674594_barbearia
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `if0_34674594_barbearia` DEFAULT CHARACTER SET utf8 ;
+USE `if0_34674594_barbearia` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Endereço_Barbearia`
+-- Table `if0_34674594_barbearia`.`Endereço_Barbearia`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Endereço_Barbearia` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Endereço_Barbearia` (
   `idEndereço_Barbearia` INT NOT NULL AUTO_INCREMENT,
   `CEP` VARCHAR(45) NULL,
   `Rua` VARCHAR(45) NULL,
@@ -31,9 +31,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Barbearia`
+-- Table `if0_34674594_barbearia`.`Barbearia`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Barbearia` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Barbearia` (
   `idBarbearia` INT NOT NULL AUTO_INCREMENT,
   `razao_social` VARCHAR(45) NULL,
   `CNPJ` VARCHAR(45) NULL,
@@ -42,16 +42,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Barbearia` (
   INDEX `fk_Barbearia_Endereço_Barbearia_idx` (`Endereço_Barbearia_idEndereço_Barbearia` ASC) ,
   CONSTRAINT `fk_Barbearia_Endereço_Barbearia`
     FOREIGN KEY (`Endereço_Barbearia_idEndereço_Barbearia`)
-    REFERENCES `mydb`.`Endereço_Barbearia` (`idEndereço_Barbearia`)
+    REFERENCES `if0_34674594_barbearia`.`Endereço_Barbearia` (`idEndereço_Barbearia`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Cliente`
+-- Table `if0_34674594_barbearia`.`Cliente`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Cliente` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Cliente` (
   `idCliente` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `CPF` VARCHAR(45) NOT NULL,
@@ -60,9 +60,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Cargos`
+-- Table `if0_34674594_barbearia`.`Cargos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Cargos` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Cargos` (
   `idCargos` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `salario` VARCHAR(45) NULL,
@@ -71,9 +71,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Funcionarios`
+-- Table `if0_34674594_barbearia`.`Funcionarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Funcionarios` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Funcionarios` (
   `idFuncionarios` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `CPF` VARCHAR(45) NULL,
@@ -82,16 +82,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Funcionarios` (
   INDEX `fk_Funcionarios_Cargos1_idx` (`Cargos_idCargos` ASC),
   CONSTRAINT `fk_Funcionarios_Cargos1`
     FOREIGN KEY (`Cargos_idCargos`)
-    REFERENCES `mydb`.`Cargos` (`idCargos`)
+    REFERENCES `if0_34674594_barbearia`.`Cargos` (`idCargos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Estoque`
+-- Table `if0_34674594_barbearia`.`Estoque`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Estoque` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Estoque` (
   `idEstoque` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `marca` VARCHAR(45) NULL,
@@ -102,16 +102,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Estoque` (
   INDEX `fk_Estoque_Funcionarios1_idx` (`Funcionarios_idFuncionarios` ASC),
   CONSTRAINT `fk_Estoque_Funcionarios1`
     FOREIGN KEY (`Funcionarios_idFuncionarios`)
-    REFERENCES `mydb`.`Funcionarios` (`idFuncionarios`)
+    REFERENCES `if0_34674594_barbearia`.`Funcionarios` (`idFuncionarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Email_Cliente`
+-- Table `if0_34674594_barbearia`.`Email_Cliente`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Email_Cliente` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Email_Cliente` (
   `idEmail_Cliente` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(45) NULL,
   `Cliente_idCliente` INT NOT NULL,
@@ -119,16 +119,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Email_Cliente` (
   INDEX `fk_Email_Cliente_Cliente1_idx` (`Cliente_idCliente` ASC),
   CONSTRAINT `fk_Email_Cliente_Cliente1`
     FOREIGN KEY (`Cliente_idCliente`)
-    REFERENCES `mydb`.`Cliente` (`idCliente`)
+    REFERENCES `if0_34674594_barbearia`.`Cliente` (`idCliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Telefone_Cliente`
+-- Table `if0_34674594_barbearia`.`Telefone_Cliente`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Telefone_Cliente` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Telefone_Cliente` (
   `idTelefone_Cliente` INT NOT NULL AUTO_INCREMENT,
   `n_Tel` VARCHAR(45) NULL,
   `Cliente_idCliente` INT NOT NULL,
@@ -136,16 +136,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Telefone_Cliente` (
   INDEX `fk_Telefone_Cliente_Cliente1_idx` (`Cliente_idCliente` ASC),
   CONSTRAINT `fk_Telefone_Cliente_Cliente1`
     FOREIGN KEY (`Cliente_idCliente`)
-    REFERENCES `mydb`.`Cliente` (`idCliente`)
+    REFERENCES `if0_34674594_barbearia`.`Cliente` (`idCliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Agendamento`
+-- Table `if0_34674594_barbearia`.`Agendamento`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Agendamento` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Agendamento` (
   `idAgendamento` INT NOT NULL AUTO_INCREMENT,
   `data` VARCHAR(45) NULL,
   `hora` VARCHAR(45) NULL,
@@ -158,26 +158,26 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Agendamento` (
   INDEX `fk_Agendamento_Barbearia1_idx` (`Barbearia_idBarbearia` ASC) ,
   CONSTRAINT `fk_Agendamento_Cliente1`
     FOREIGN KEY (`Cliente_idCliente`)
-    REFERENCES `mydb`.`Cliente` (`idCliente`)
+    REFERENCES `if0_34674594_barbearia`.`Cliente` (`idCliente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Agendamento_Funcionarios1`
     FOREIGN KEY (`Funcionarios_idFuncionarios`)
-    REFERENCES `mydb`.`Funcionarios` (`idFuncionarios`)
+    REFERENCES `if0_34674594_barbearia`.`Funcionarios` (`idFuncionarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Agendamento_Barbearia1`
     FOREIGN KEY (`Barbearia_idBarbearia`)
-    REFERENCES `mydb`.`Barbearia` (`idBarbearia`)
+    REFERENCES `if0_34674594_barbearia`.`Barbearia` (`idBarbearia`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Telefone_Funcionarios`
+-- Table `if0_34674594_barbearia`.`Telefone_Funcionarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Telefone_Funcionarios` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Telefone_Funcionarios` (
   `idTelefone_Funcionarios` INT NOT NULL AUTO_INCREMENT,
   `n_Tel` VARCHAR(45) NULL,
   `Funcionarios_idFuncionarios` INT NOT NULL,
@@ -185,16 +185,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Telefone_Funcionarios` (
   INDEX `fk_Telefone_Funcionarios_Funcionarios1_idx` (`Funcionarios_idFuncionarios` ASC) ,
   CONSTRAINT `fk_Telefone_Funcionarios_Funcionarios1`
     FOREIGN KEY (`Funcionarios_idFuncionarios`)
-    REFERENCES `mydb`.`Funcionarios` (`idFuncionarios`)
+    REFERENCES `if0_34674594_barbearia`.`Funcionarios` (`idFuncionarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Endereço_Funconarios`
+-- Table `if0_34674594_barbearia`.`Endereço_Funconarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Endereço_Funconarios` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Endereço_Funconarios` (
   `idEndereço_Funconarios` INT NOT NULL AUTO_INCREMENT,
   `end_Funcionario` VARCHAR(45) NULL,
   `Funcionarios_idFuncionarios` INT NOT NULL,
@@ -202,16 +202,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Endereço_Funconarios` (
   INDEX `fk_Endereço_Funconarios_Funcionarios1_idx` (`Funcionarios_idFuncionarios` ASC) ,
   CONSTRAINT `fk_Endereço_Funconarios_Funcionarios1`
     FOREIGN KEY (`Funcionarios_idFuncionarios`)
-    REFERENCES `mydb`.`Funcionarios` (`idFuncionarios`)
+    REFERENCES `if0_34674594_barbearia`.`Funcionarios` (`idFuncionarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Email_Funcionario`
+-- Table `if0_34674594_barbearia`.`Email_Funcionario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Email_Funcionario` (
+CREATE TABLE IF NOT EXISTS `if0_34674594_barbearia`.`Email_Funcionario` (
   `idEmail_Funcionario` INT NOT NULL AUTO_INCREMENT,
   `email_Funcionario` VARCHAR(45) NULL,
   `Funcionarios_idFuncionarios` INT NOT NULL,
@@ -220,7 +220,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Email_Funcionario` (
   INDEX `fk_Email_Funcionario_Funcionarios1_idx` (`Funcionarios_idFuncionarios` ASC, `Funcionarios_Cargos_idCargos` ASC) ,
   CONSTRAINT `fk_Email_Funcionario_Funcionarios1`
     FOREIGN KEY (`Funcionarios_idFuncionarios` , `Funcionarios_Cargos_idCargos`)
-    REFERENCES `mydb`.`Funcionarios` (`idFuncionarios` , `Cargos_idCargos`)
+    REFERENCES `if0_34674594_barbearia`.`Funcionarios` (`idFuncionarios` , `Cargos_idCargos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

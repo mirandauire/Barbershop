@@ -1,23 +1,31 @@
 <?php
-// Verificar se o formulário foi enviado
+include_once("utilitarios.php");
+
+// Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Dados do usuário (substitua essas informações com os dados reais do usuário)
-    $usuarioCadastrado = "u123";
-    $senhaCadastrada = "s123";
+  // Obter as credenciais do formulário
+  $usuario = $_POST["usuario"];
+  $senha = $_POST["senha"];
 
-    // Obter os dados enviados pelo formulário
-    $usuarioDigitado = $_POST["usuario"];
-    $senhaDigitada = $_POST["senha"];
+  // Verificar a conexão
+  if ($mysql->connect_error) {
+      die("Erro de conexão: " . $mysql->connect_error);
+  }
 
-    // Verificar as credenciais do usuário
-    if ($usuarioDigitado === $usuarioCadastrado && $senhaDigitada === $senhaCadastrada) {
-        // Credenciais corretas, redirecionar para a página de sucesso
-        header("Location: user.php");
-        exit();
-    } else {
-        // Credenciais incorretas, exibir mensagem de erro
-        header("Location: index.php#section0");
-        $erroLogin = "Usuário ou senha inválidos!";
-    }
+  // Consulta para verificar as credenciais (substitua "tabela_usuarios" pelo nome da tabela que você está usando)
+  $sql = "SELECT * FROM Cliente WHERE nome='$usuario' AND senha='$senha'";
+  $result = $mysql->query($sql);
+
+  if ($result->num_rows == 1) {
+      // Credenciais corretas, o usuário tem acesso
+      header("Location: user.php");
+      echo "Login bem-sucedido!";
+  } else {
+      // Credenciais incorretas, o usuário não tem acesso
+      echo "Email ou senha incorretos.";
+  }
+
+  // Fechar a conexão
+  $mysql->close();
 }
 ?>
